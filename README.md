@@ -14,26 +14,31 @@ Swapy
 
 ## Ürün İsmi
 
---Movie App--
+Swapy
 
 ## Ürün Açıklaması
 
-- Movie App uygulamamız ile insanların izlemek istediği filmlere ve dizilere daha kolay karar vermesini sağlayacağız. İçerisinde binlerce filmi barındıran uygulamamız aynı zamanda Netflix, Prime vb. platformlarda yayınlanıp yayınlanmadığını ve IMDB puanlarını da gösterecek.
+Uygulamamız, çocukları büyürken kullandıkları ya da kullanmadıkları oyuncak, kıyafet veya kitap gibi eşyaları başka ebeveynler ile takas edebileceği bir platform olarak kullanıcılara sunulacak. Uygulamamız ebeveynlerin çocukları için ihtiyaç duydukları veya satın almak istedikleri farklı ürünlere ulaşmasını sağlarken kullanıcıların tasarruf yapmasını ve aynı zamanda yeni ürünler satın almayarak geri dönüşüme katkı sağlayan bir uygulama olarak bu konuya da dikkat çekmeyi amaçlıyor. Diğer bir yandan uygulama geri dönüşüme dikkat çekebilmek için kullanıcıların biriktirdikleri para puanlarla uygulama da sponsor iş birliği ile kullanıcılara sunulmuş market bölümünden geri dönüşüme uyumlu olan veya geri dönüştürülmüş malzemelerden çocukları için çeşitli suluk, biberon gibi ürünler alabilirler.  
 
 ## Ürün Özellikleri
 
-- Filmleri türüne göre ayırma
-- Filmlerin yönetmen, aktör, aktris vb. bilgilerini posteriyle birlikte gösterme
-- IMDB ve Rotten Tomatoes puanlarını gösterme
-- Netflix'te ve Prime'da bulunurluğunu gösterme
+•	Oyuncak, kıyafet ve kitap gibi kategoriler ile uygulama içinde kolaylıkla dolaşılabilir.
+•	Oyuncak ve kıyafetler yaş gruplarına ve cinsiyete göre filtrelenebilir.
+•	Takas yapan profiller puanlanabilir ve yorumlanabilir.
+•	Takas yapılan ürünün parasal değeri görüntülenebilir.
+•	Ebeveynler çocukları için evde oyuncak yapımı gibi videolara ulaşabilir.
+•	Kullanıcılar el yapımı ürünleri sergileyebilir ve satabilir.
+•	Sponsorlar tarafından sunulan geri dönüştürülebilir ürünlere ulaşabilir.
+•	Yapılan takaslardan markette kullanmak üzere puan kazanılabilir.
+
 
 ## Hedef Kitle
 
-- Netflix kullanıcıları
-- Prime kullanıcıları
-- Sinema severler
-- Dizi severler
-- 15 - 65 yaş arası kullanıcılar
+•	Ebeveynler
+•	Eğitim Kurumları (İlkokul, Anaokulu vb.)
+•	Geri Dönüşüm STK ve Kurumları
+•	Handmade Ürün Sanatçı ve Satıcıları
+
 
 ## Product Backlog URL
 
