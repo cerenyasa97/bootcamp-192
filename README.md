@@ -38,6 +38,7 @@ Uygulamamız, çocukları büyürken kullandıkları ya da kullanmadıkları oyu
 -	Eğitim Kurumları (İlkokul, Anaokulu vb.)
 -	Geri Dönüşüm STK ve Kurumları
 -	Handmade Ürün Sanatçı ve Satıcıları
+-   Pazaryerleri ve İlgili Sponsorlar
 
 
 ## Product Backlog URL
