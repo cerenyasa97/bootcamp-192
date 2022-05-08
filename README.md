@@ -22,22 +22,22 @@ Uygulamamız, çocukları büyürken kullandıkları ya da kullanmadıkları oyu
 
 ## Ürün Özellikleri
 
-•	Oyuncak, kıyafet ve kitap gibi kategoriler ile uygulama içinde kolaylıkla dolaşılabilir.
-•	Oyuncak ve kıyafetler yaş gruplarına ve cinsiyete göre filtrelenebilir.
-•	Takas yapan profiller puanlanabilir ve yorumlanabilir.
-•	Takas yapılan ürünün parasal değeri görüntülenebilir.
-•	Ebeveynler çocukları için evde oyuncak yapımı gibi videolara ulaşabilir.
-•	Kullanıcılar el yapımı ürünleri sergileyebilir ve satabilir.
-•	Sponsorlar tarafından sunulan geri dönüştürülebilir ürünlere ulaşabilir.
-•	Yapılan takaslardan markette kullanmak üzere puan kazanılabilir.
+-	Oyuncak, kıyafet ve kitap gibi kategoriler ile uygulama içinde kolaylıkla dolaşılabilir.
+-	Oyuncak ve kıyafetler yaş gruplarına ve cinsiyete göre filtrelenebilir.
+-	Takas yapan profiller puanlanabilir ve yorumlanabilir.
+-	Takas yapılan ürünün parasal değeri görüntülenebilir.
+-	Ebeveynler çocukları için evde oyuncak yapımı gibi videolara ulaşabilir.
+-	Kullanıcılar el yapımı ürünleri sergileyebilir ve satabilir.
+-	Sponsorlar tarafından sunulan geri dönüştürülebilir ürünlere ulaşabilir.
+-	Yapılan takaslardan markette kullanmak üzere puan kazanılabilir.
 
 
 ## Hedef Kitle
 
-•	Ebeveynler
-•	Eğitim Kurumları (İlkokul, Anaokulu vb.)
-•	Geri Dönüşüm STK ve Kurumları
-•	Handmade Ürün Sanatçı ve Satıcıları
+-	Ebeveynler
+-	Eğitim Kurumları (İlkokul, Anaokulu vb.)
+-	Geri Dönüşüm STK ve Kurumları
+-	Handmade Ürün Sanatçı ve Satıcıları
 
 
 ## Product Backlog URL
