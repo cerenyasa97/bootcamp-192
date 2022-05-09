@@ -14,30 +14,36 @@ Swapy
 
 ## Ürün İsmi
 
---Movie App--
+Swapy
 
 ## Ürün Açıklaması
 
-- Movie App uygulamamız ile insanların izlemek istediği filmlere ve dizilere daha kolay karar vermesini sağlayacağız. İçerisinde binlerce filmi barındıran uygulamamız aynı zamanda Netflix, Prime vb. platformlarda yayınlanıp yayınlanmadığını ve IMDB puanlarını da gösterecek.
+Uygulamamız, çocukları büyürken kullandıkları ya da kullanmadıkları oyuncak, kıyafet veya kitap gibi eşyaları başka ebeveynler ile takas edebileceği bir platform olarak kullanıcılara sunulacak. Uygulamamız ebeveynlerin çocukları için ihtiyaç duydukları veya satın almak istedikleri farklı ürünlere ulaşmasını sağlarken kullanıcıların tasarruf yapmasını ve aynı zamanda yeni ürünler satın almayarak geri dönüşüme katkı sağlayan bir uygulama olarak bu konuya da dikkat çekmeyi amaçlıyor. Diğer bir yandan uygulama geri dönüşüme dikkat çekebilmek için kullanıcıların biriktirdikleri para puanlarla uygulama da sponsor iş birliği ile kullanıcılara sunulmuş market bölümünden geri dönüşüme uyumlu olan veya geri dönüştürülmüş malzemelerden çocukları için çeşitli suluk, biberon gibi ürünler alabilirler.  
 
 ## Ürün Özellikleri
 
-- Filmleri türüne göre ayırma
-- Filmlerin yönetmen, aktör, aktris vb. bilgilerini posteriyle birlikte gösterme
-- IMDB ve Rotten Tomatoes puanlarını gösterme
-- Netflix'te ve Prime'da bulunurluğunu gösterme
+-	Oyuncak, kıyafet ve kitap gibi kategoriler ile uygulama içinde kolaylıkla dolaşılabilir.
+-	Oyuncak ve kıyafetler yaş gruplarına ve cinsiyete göre filtrelenebilir.
+-	Takas yapan profiller puanlanabilir ve yorumlanabilir.
+-	Takas yapılan ürünün parasal değeri görüntülenebilir.
+-	Ebeveynler çocukları için evde oyuncak yapımı gibi videolara ulaşabilir.
+-	Kullanıcılar el yapımı ürünleri sergileyebilir ve satabilir.
+-	Sponsorlar tarafından sunulan geri dönüştürülebilir ürünlere ulaşabilir.
+-	Yapılan takaslardan markette kullanmak üzere puan kazanılabilir.
+
 
 ## Hedef Kitle
 
-- Netflix kullanıcıları
-- Prime kullanıcıları
-- Sinema severler
-- Dizi severler
-- 15 - 65 yaş arası kullanıcılar
+-	Ebeveynler
+-	Eğitim Kurumları (İlkokul, Anaokulu vb.)
+-	Geri Dönüşüm STK ve Kurumları
+-	Handmade Ürün Sanatçı ve Satıcıları
+- Pazaryerleri ve İlgili Sponsorlar
+
 
 ## Product Backlog URL
 
-[Miro Backlog Board](https://miro.com/app/board/uXjVOSSCpsI=/)
+[Miro Backlog Board](https://miro.com/app/board/uXjVO2xifHg=/)
 
 ---
 
@@ -47,33 +53,50 @@ Swapy
 
 - **Sprint içinde tamamlanması tahmin edilen puan**: 100 Puan
 
-- **Puan tamamlama mantığı**: Toplamda proje boyunca tamamlanması gereken 380 puanlık backlog bulunmaktadır. 4 sprint'e bölündüğünde ilk sprint'in en azından 100 ile başlaması gerektiğine karar verildi.
+- **Puan tamamlama mantığı**: Toplamda proje boyunca tamamlanması gereken 380 puanlık backlog bulunmaktadır. 3 sprint'e bölündüğünde ilk sprint'in en azından 100 ile başlaması gerektiğine karar verildi.
 
-- **Backlog düzeni ve Story seçimleri**: Backlog'umuz ilk yapılacak story'lere göre düzenlenmiştir. Sprint başına tahmin edilen puan sayısını geçmeyecek şekilde sıradan seçimler yapılmaktadır. Story başına çıkan tahmin puanı, toplam puanın yarısından az tutulmuştur. 
+- **Backlog düzeni ve Story seçimleri**: Backlog'umuz 3 Storyden oluşmuştur, tahmin edilen puan noktasına göre toplamda 100 puan verilmiştir.
 
 Story'ler yapılacak işlere (task'lere) bölünmüştür. Miro Board'da gözüken kırmızı item'lar yapılacak işleri (task) gösterirken, mavi item'lar story'leri temsil etmektedir.
 
-- **Daily Scrum**: Daily Scrum toplantılarının zamansal sebeplerden ötürü Slack üzerinden yapılmasına karar verilmiştir. Daily Scrum toplantısı örneği jpeg veya word olarak Readme'de tarafımızdan paylaşılmaktadır: [Sprint 1 Daily Scrum Chats](https://github.com/OyunveUygulamaAkademisi/BootcampScrumTemplate/blob/main/ProjectManagement/Sprint1Documents/DailyScrumMeetingNotesSprint1.docx?raw=true)
+- **Daily Scrum**: Daily Scrumların 1. Sprint için Word üzerinden yapılmasına karar verilmiştir. [Swapy - DailyScrumMeetingNotesSprint1](https://github.com/cerenyasa97/swapy/blob/azimgunes/ProjectManagement/Sprint1Documents/Swapy%20-%20DailyScrumMeetingNotesSprint1.docx?raw=true)
 
 - **Sprint board update**: Sprint board screenshotları: 
-![Backlog 1](https://raw.githubusercontent.com/OyunveUygulamaAkademisi/BootcampScrumTemplate/main/ProjectManagement/Sprint1Documents/backlog1.png) 
-![Backlog 2](https://raw.githubusercontent.com/OyunveUygulamaAkademisi/BootcampScrumTemplate/main/ProjectManagement/Sprint1Documents/backlog2.png) 
-![Backlog 3](https://raw.githubusercontent.com/OyunveUygulamaAkademisi/BootcampScrumTemplate/main/ProjectManagement/Sprint1Documents/backlog3.png)
+![Backlog 1](https://github.com/cerenyasa97/swapy/blob/27336a6a8cbf5e034d288cc3d2e246724dd3adc2/ProjectManagement/Sprint1Documents/Swapy%20backlog%201.jpg) 
+![Backlog 2](https://github.com/cerenyasa97/swapy/blob/27336a6a8cbf5e034d288cc3d2e246724dd3adc2/ProjectManagement/Sprint1Documents/Swapy%20backlog%20%202.jpg) 
+![Backlog 3](https://github.com/cerenyasa97/swapy/blob/27336a6a8cbf5e034d288cc3d2e246724dd3adc2/ProjectManagement/Sprint1Documents/Swapy%20backlog%203.jpg)
 
 - **Ürün Durumu**: Ekran görüntüleri:
-  ![Screenshot 1](https://github.com/OyunveUygulamaAkademisi/BootcampScrumTemplate/blob/main/ProjectManagement/Sprint1Documents/productss1.png?raw=true)
-  ![Screenshot 2](https://github.com/OyunveUygulamaAkademisi/BootcampScrumTemplate/blob/main/ProjectManagement/Sprint1Documents/productss2.png?raw=true)
+
+  ![Screenshot 1](https://github.com/cerenyasa97/swapy/blob/27336a6a8cbf5e034d288cc3d2e246724dd3adc2/ProjectManagement/Sprint1Documents/Product%201.jpg)
+  ![Screenshot 2](https://github.com/cerenyasa97/swapy/blob/27336a6a8cbf5e034d288cc3d2e246724dd3adc2/ProjectManagement/Sprint1Documents/Product%202.jpg)
 
 - **Sprint Review**: 
-Alınan kararlar: Veritabanı oluşturması email ile toplanacak veriler için gerekli görülmüştür. Fakat bir yandan da veritabanı form sayfası için gerekli olmamıştır. O sebeple PBI bir sonraki sprint'e aktarılmıştır. Çıkan ürünün çalışmasında ve testlerinde bir problem görülmemiştir. Ekstra koyulması gereken özellikler belirlenmiştir. Sprint Review katılımcıları: ......
+
+- UI tasarımının eksik kısımlarına 2. Sprintte devam edilmesine karar verildi. 
+- Kullanıcılar için düşünülen Chat uygulamasının zaman alacağı düşünülerek şimdilik yapılmamasına karar verildi.
+- MVVM yapısı için Provider kullanılmasına karar verildi.
+- Server içim Firebase kullanılmasına karar verildi.
+- Jira'dan Miro geçilmesine karar verildi.
+
+
+Sprint Review katılımcıları: 
+
+- Sibel Güleş: Product Owner
+- Azim Güneş: Scrum Master
+- Ceren Yaşa: Team Member/Developer
+- Fatma Nur Zehra Çaçan: Team Member/Developer
+- Melike Sena Yurdakul: Team Member/Developer
 
 - **Sprint Retrospective:**
-  - Takım içindeki görev dağılımıyla ilgili düzenleme yapılması kararı alınmıştır
-  - Tahmin puanları gözden geçirilmeli ve sprint planlama toplantılarında gerekli geri bildirimlerin developer'lar tarafından verildiğine emin olunmalı
-  - Unit test'ler için ayrılan efor/saat arttırılmalı 
+  - Ürün yol haritasının iyileştirilmesine karar verildi.
+  - Görev noktalarında değişikler yapılmasına karar verildi.
+  - Development kısmına daha çok destek verilmesine karar verildi.
+  - Sprint Board'da iyileştirilme yapılmasına karar verildi.
 
 -**Diğer Notlar**:
-- N/A
+
+-Bu sprintte çalışmaların biraz geç başlamış olması ve araya bayram tatili gibi durumların girmesi nedeniyle ilerleme biraz yavaş oldu ancak ekip olarak yeni Sprintin daha verimli geçeceğini düşünüyoruz. 
 
 ---
 
