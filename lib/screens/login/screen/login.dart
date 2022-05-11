@@ -19,48 +19,55 @@ class Login extends StatelessWidget {
   }
 
   Widget _body(BuildContext context, LoginViewModel viewModel) => Scaffold(
-        body: Stack(children: [
-          Image.asset(
-            ImageConstants.background,
-          ),
-          SafeArea(
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.stretch,
-              children: [
-                Flexible(
-                  child: Text(
-                    'Yeniden Hoşgeldiniz',
-                    style: Theme.of(context).textTheme.headline1,
-                    textAlign: TextAlign.center,
-                  ),
-                ),
-                Flexible(
-                    child: SizedBox(
-                  height: context.dynamicHeight(25),
-                )),
-                Flexible(
-                  child: Text(
-                    'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Diam maecenas mi non sed ut odio. Non, justo, sed facilisi et.',
-                    style: Theme.of(context).textTheme.bodyText2,
-                    textAlign: TextAlign.center,
-                  ),
-                ),
-                Flexible(
-                    child: SizedBox(
-                  height: context.dynamicHeight(50),
-                )),
-                Flexible(
-                  flex: 3,
-                  child: Form(
-                    key: viewModel.formKey,
-                    child: Column(
-                      mainAxisAlignment: MainAxisAlignment.spaceAround,
-                      children: [
-                        TextFormField(
+        body: SingleChildScrollView(
+          child: SizedBox(
+            width: context.currentWidth,
+            height: context.currentHeight,
+            child: Stack(children: [
+              Image.asset(
+                ImageConstants.background,
+                width: context.currentWidth,
+              ),
+              SafeArea(
+                child: Form(
+                  key: viewModel.formKey,
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.stretch,
+                    children: [
+                      Flexible(
+                        child: Text(
+                          'Yeniden Hoşgeldiniz',
+                          style: Theme.of(context).textTheme.headline1,
+                          textAlign: TextAlign.center,
+                        ),
+                      ),
+                      Flexible(
+                          child: SizedBox(
+                            height: context.dynamicHeight(25),
+                          )),
+                      Flexible(
+                        child: Text(
+                          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Diam maecenas mi non sed ut odio. Non, justo, sed facilisi et.',
+                          style: Theme.of(context).textTheme.bodyText2,
+                          textAlign: TextAlign.center,
+                        ),
+                      ),
+                      Flexible(
+                          child: SizedBox(
+                            height: context.dynamicHeight(50),
+                          )),
+                      Flexible(
+                        child: TextFormField(
                           onSaved: viewModel.saveEmail,
                           decoration: InputDecoration(hintText: 'Email'),
                         ),
-                        TextFormField(
+                      ),
+                      Flexible(
+                          child: SizedBox(
+                            height: context.dynamicHeight(50),
+                          )),
+                      Flexible(
+                        child: TextFormField(
                           onSaved: viewModel.savePassword,
                           obscureText: viewModel.showPassword,
                           decoration: InputDecoration(
@@ -71,81 +78,85 @@ class Login extends StatelessWidget {
                             ),
                           ),
                         ),
-                      ],
-                    ),
-                  ),
-                ),
-                Align(
-                  alignment: Alignment.centerRight,
-                  child: TextButton(
-                      onPressed: viewModel.forgotPassword,
-                      child: Text(
-                        'Parolamı Unuttum',
-                        style: Theme.of(context)
-                            .textTheme
-                            .bodyText1
-                            ?.copyWith(decoration: TextDecoration.underline),
-                      )),
-                ),
-                Flexible(
-                    child: SizedBox(
-                  height: context.dynamicHeight(25),
-                )),
-                Flexible(
-                  child: CustomButton(
-                    text: 'Giriş Yap',
-                    onTap: viewModel.login,
-                  ),
-                ),
-                Flexible(
-                    child: SizedBox(
-                  height: context.dynamicHeight(80),
-                )),
-                Flexible(
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      Flexible(child: Image.asset(ImageConstants.otherOptionsLeft)),
+                      ),
+                      Align(
+                        alignment: Alignment.centerRight,
+                        child: TextButton(
+                            onPressed: viewModel.forgotPassword,
+                            child: Text(
+                              'Parolamı Unuttum',
+                              style: Theme.of(context)
+                                  .textTheme
+                                  .bodyText1
+                                  ?.copyWith(decoration: TextDecoration.underline),
+                            )),
+                      ),
                       Flexible(
-                        child: Text(
-                          'Ya da bunlardan biriyle devam et!',
-                          style: Theme.of(context)
-                              .textTheme
-                              .bodyText1
-                              ?.copyWith(fontSize: 12),
-                          textAlign: TextAlign.center,
+                          child: SizedBox(
+                            height: context.dynamicHeight(25),
+                          )),
+                      Flexible(
+                        child: CustomButton(
+                          text: 'Giriş Yap',
+                          onTap: viewModel.login,
                         ),
                       ),
-                      Flexible(child: Image.asset(ImageConstants.otherOptionsRight)),
+                      Flexible(
+                          child: SizedBox(
+                            height: context.dynamicHeight(80),
+                          )),
+                      Flexible(
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            Flexible(
+                                child:
+                                Image.asset(ImageConstants.otherOptionsLeft)),
+                            Flexible(
+                              child: Text(
+                                'Ya da bunlardan biriyle devam et!',
+                                style: Theme.of(context)
+                                    .textTheme
+                                    .bodyText1
+                                    ?.copyWith(fontSize: 12),
+                                textAlign: TextAlign.center,
+                              ),
+                            ),
+                            Flexible(
+                                child:
+                                Image.asset(ImageConstants.otherOptionsRight)),
+                          ],
+                        ),
+                      ),
+                      Flexible(
+                          child: SizedBox(
+                            height: context.dynamicHeight(50),
+                          )),
+                      Flexible(
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                          children: [
+                            CustomCircleButton(
+                              onTap: viewModel.loginWithGmail,
+                              icon: EvaIcons.google,
+                            ),
+                            CustomCircleButton(
+                              onTap: viewModel.loginWitFacebook,
+                              icon: EvaIcons.facebook,
+                            ),
+                            CustomCircleButton(
+                              onTap: viewModel.loginWithApple,
+                              icon: Ionicons.logo_apple,
+                            ),
+                          ],
+                        ),
+                      ),
                     ],
-                  ),
+                  ).pagePadding(horizontal: 12),
                 ),
-                Flexible(
-                    child: SizedBox(
-                  height: context.dynamicHeight(50),
-                )),
-                Flexible(
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                    children: [
-                      CustomCircleButton(
-                        onTap: viewModel.loginWithGmail,
-                        icon: EvaIcons.google,
-                      ),
-                      CustomCircleButton(
-                        onTap: viewModel.loginWitFacebook,
-                        icon: EvaIcons.facebook,
-                      ),
-                      CustomCircleButton(
-                        onTap: viewModel.loginWithApple,
-                        icon: Ionicons.logo_apple,
-                      ),
-                    ],
-                  ),
-                ),
-              ],
-            ).pagePadding(horizontal: 12),
+              ),
+            ]),
           ),
-        ]),
+        ),
       );
 }
