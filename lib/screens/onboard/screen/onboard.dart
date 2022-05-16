@@ -11,6 +11,7 @@ class Onboard extends StatelessWidget {
     final theme = Theme.of(context);
     final size = MediaQuery.of(context).size;
     return Scaffold(
+
       body: Stack(
         children: [
           Image.asset(
@@ -18,6 +19,7 @@ class Onboard extends StatelessWidget {
             width: size.width,
             height: size.height,
           ),
+
           Column(
             children: [
               Image.asset(ImageConstants.onboardVector),
