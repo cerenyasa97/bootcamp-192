@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:swapy/core/constants/image/image_constants.dart';
-import 'package:swapy/core/extension/context_extension.dart';
 import 'package:swapy/core/extension/widget_extension.dart';
 import 'package:swapy/core/widget/button/custom_button.dart';
 
