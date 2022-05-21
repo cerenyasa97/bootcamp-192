@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:swapy/core/constants/color/color.dart';
 import 'package:swapy/core/constants/image/image_constants.dart';
 import 'package:swapy/core/extension/widget_extension.dart';
+import 'package:swapy/core/navigation/navigation_service.dart';
+import 'package:swapy/core/navigation/router.dart';
 import 'package:swapy/core/widget/button/custom_button.dart';
 
 class AfterLogin extends StatelessWidget {
@@ -19,8 +21,8 @@ class AfterLogin extends StatelessWidget {
               child: FittedBox(
                 child: Text(
                   'Başlamaya Hazırsın!',
-                  style:
-                      textTheme.headline1?.copyWith(color: AppColor.customOrange),
+                  style: textTheme.headline1
+                      ?.copyWith(color: AppColor.customOrange),
                 ),
               ),
             ),
@@ -28,7 +30,8 @@ class AfterLogin extends StatelessWidget {
             Flexible(
               child: CustomButton(
                 text: 'Devam Et',
-                onTap: () {},
+                onTap: () => NavigationService.instance
+                    .navigateReplacement(AppRouter.home),
                 color: AppColor.customGreen,
               ),
             ),

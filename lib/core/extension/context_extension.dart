@@ -19,6 +19,15 @@ extension ContextExtension on BuildContext {
 
   bool get mediumWidthPhone => currentWidth > 350 && currentWidth < 400;
 
-  double heightAccordingToSize(double minSize) => smallHeightPhone ? minSize : mediumHeightPhone ? minSize + 10 : minSize + 20;
-  double widthAccordingToSize(double minSize) => smallWidthPhone ? minSize : mediumWidthPhone ? minSize + 5 : minSize + 10;
+  double heightAccordingToSize(double minSize) => smallHeightPhone
+      ? minSize
+      : mediumHeightPhone
+          ? minSize + 10
+          : minSize + 20;
+
+  double widthAccordingToSize(double minSize) => smallWidthPhone
+      ? minSize
+      : mediumWidthPhone
+          ? minSize + 5
+          : minSize + 10;
 }

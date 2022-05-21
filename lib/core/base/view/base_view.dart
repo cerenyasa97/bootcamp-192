@@ -30,7 +30,7 @@ class BaseView<T extends BaseViewModel> extends StatelessWidget {
             )
           : Stack(
               children: [
-                builder!(context, viewModel),
+                if (builder != null) builder!(context, viewModel),
                 Visibility(
                     visible: viewModel.isLoading,
                     child: Container(

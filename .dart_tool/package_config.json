@@ -2,6 +2,18 @@
   "configVersion": 2,
   "packages": [
     {
+      "name": "archive",
+      "rootUri": "file:///Users/cerenyasa/sdk/flutter/.pub-cache/hosted/pub.dartlang.org/archive-3.3.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
+      "name": "args",
+      "rootUri": "file:///Users/cerenyasa/sdk/flutter/.pub-cache/hosted/pub.dartlang.org/args-2.3.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "async",
       "rootUri": "file:///Users/cerenyasa/sdk/flutter/.pub-cache/hosted/pub.dartlang.org/async-2.8.2",
       "packageUri": "lib/",
@@ -122,6 +134,12 @@
       "languageVersion": "2.12"
     },
     {
+      "name": "flutter_native_splash",
+      "rootUri": "file:///Users/cerenyasa/sdk/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_native_splash-1.3.3",
+      "packageUri": "lib/",
+      "languageVersion": "2.15"
+    },
+    {
       "name": "flutter_svg",
       "rootUri": "file:///Users/cerenyasa/sdk/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_svg-1.0.3",
       "packageUri": "lib/",
@@ -154,6 +172,12 @@
     {
       "name": "http_parser",
       "rootUri": "file:///Users/cerenyasa/sdk/flutter/.pub-cache/hosted/pub.dartlang.org/http_parser-4.0.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
+      "name": "image",
+      "rootUri": "file:///Users/cerenyasa/sdk/flutter/.pub-cache/hosted/pub.dartlang.org/image-3.1.3",
       "packageUri": "lib/",
       "languageVersion": "2.12"
     },
@@ -332,6 +356,12 @@
       "languageVersion": "2.12"
     },
     {
+      "name": "universal_io",
+      "rootUri": "file:///Users/cerenyasa/sdk/flutter/.pub-cache/hosted/pub.dartlang.org/universal_io-2.0.4",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "vector_math",
       "rootUri": "file:///Users/cerenyasa/sdk/flutter/.pub-cache/hosted/pub.dartlang.org/vector_math-2.1.1",
       "packageUri": "lib/",
@@ -356,13 +386,19 @@
       "languageVersion": "2.14"
     },
     {
+      "name": "yaml",
+      "rootUri": "file:///Users/cerenyasa/sdk/flutter/.pub-cache/hosted/pub.dartlang.org/yaml-3.1.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "swapy",
       "rootUri": "../",
       "packageUri": "lib/",
       "languageVersion": "2.12"
     }
   ],
-  "generated": "2022-05-21T12:55:30.821650Z",
+  "generated": "2022-05-21T17:22:03.931095Z",
   "generator": "pub",
   "generatorVersion": "2.16.2"
 }
