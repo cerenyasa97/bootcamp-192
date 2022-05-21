@@ -5,7 +5,11 @@ class CustomCircleButton extends StatelessWidget {
   final IconData? icon;
   final Widget? child;
   final VoidCallback? onTap;
-  const CustomCircleButton({Key? key, this.icon, this.child, this.onTap}) : super(key: key);
+  final Color? iconColor;
+
+  const CustomCircleButton(
+      {Key? key, this.icon, this.child, this.onTap, this.iconColor})
+      : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -24,9 +28,12 @@ class CustomCircleButton extends StatelessWidget {
                 spreadRadius: 0.0,
                 offset: Offset(0.0, 2.0), // shadow direction: bottom right
               )
-            ]
-        ),
-        child: child ?? Icon(icon),
+            ]),
+        child: child ??
+            Icon(
+              icon,
+              color: iconColor,
+            ),
       ),
     );
   }

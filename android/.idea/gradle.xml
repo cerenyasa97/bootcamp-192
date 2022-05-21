@@ -6,15 +6,6 @@
         <option name="testRunner" value="GRADLE" />
         <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="modules">
-          <set>
-            <option value="$PROJECT_DIR$/../../src/flutter/.pub-cache/hosted/pub.dartlang.org/firebase_auth-3.3.18/android" />
-            <option value="$PROJECT_DIR$/../../src/flutter/.pub-cache/hosted/pub.dartlang.org/firebase_core-1.17.0/android" />
-            <option value="$PROJECT_DIR$/../../src/flutter/.pub-cache/hosted/pub.dartlang.org/path_provider_android-2.0.14/android" />
-            <option value="$PROJECT_DIR$" />
-            <option value="$PROJECT_DIR$/app" />
-          </set>
-        </option>
         <option name="resolveModulePerSourceSet" value="false" />
       </GradleProjectSettings>
     </option>
