@@ -1,7 +1,9 @@
+import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
 import 'package:eva_icons_flutter/eva_icons_flutter.dart';
 import 'package:ionicons/ionicons.dart';
 import 'package:swapy/core/base/view/base_view.dart';
+import 'package:swapy/core/constants/color/color.dart';
 import 'package:swapy/core/constants/image/image_constants.dart';
 import 'package:swapy/core/extension/widget_extension.dart';
 import 'package:swapy/core/widget/button/custom_circle_button.dart';
@@ -19,15 +21,19 @@ class Login extends StatelessWidget {
   }
 
   Widget _body(BuildContext context, LoginViewModel viewModel) => Scaffold(
-        body: SingleChildScrollView(
-          child: SizedBox(
-            width: context.currentWidth,
-            height: context.currentHeight,
-            child: Stack(children: [
-              Image.asset(
-                ImageConstants.background,
-                width: context.currentWidth,
-              ),
+        body: SizedBox(
+          width: context.currentWidth,
+          height: context.currentHeight,
+          child: Stack(
+            children: [
+              Positioned(
+                  bottom: -context.dynamicHeight(15),
+                  right: -context.dynamicWidth(25),
+                  child: Image.asset(
+                    ImageConstants.dinosaur,
+                    height: context
+                        .dynamicWidth(context.smallHeightPhone ? 275 : 350),
+                  )),
               SafeArea(
                 child: Form(
                   key: viewModel.formKey,
@@ -35,49 +41,45 @@ class Login extends StatelessWidget {
                     crossAxisAlignment: CrossAxisAlignment.stretch,
                     children: [
                       Flexible(
-                        child: Text(
-                          'Yeniden Hoşgeldiniz',
-                          style: Theme.of(context).textTheme.headline1,
-                          textAlign: TextAlign.center,
+                        child: FittedBox(
+                          child: Text(
+                            'Yeniden Hoş Geldiniz',
+                            style: Theme.of(context)
+                                .textTheme
+                                .headline2
+                                ?.copyWith(color: AppColor.customGreen),
+                            textAlign: TextAlign.center,
+                          ),
                         ),
                       ),
                       Flexible(
-                          child: SizedBox(
-                            height: context.dynamicHeight(25),
-                          )),
-                      Flexible(
-                        child: Text(
-                          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Diam maecenas mi non sed ut odio. Non, justo, sed facilisi et.',
+                        flex: 2,
+                        child: AutoSizeText(
+                          'Hesabın var mı? Hadi giriş yap ve eski oyuncaklarını yeni ve eğlenceli oyuncaklar ile değiştir miniğini mutlu et.',
+                          maxLines: 3,
                           style: Theme.of(context).textTheme.bodyText2,
                           textAlign: TextAlign.center,
-                        ),
+                        ).widgetPadding(
+                            vertical: 20),
                       ),
-                      Flexible(
-                          child: SizedBox(
-                            height: context.dynamicHeight(50),
-                          )),
                       Flexible(
                         child: TextFormField(
                           onSaved: viewModel.saveEmail,
-                          decoration: InputDecoration(hintText: 'Email'),
-                        ),
+                          decoration: InputDecoration(labelText: 'Email'),
+                        ).widgetPadding(),
                       ),
-                      Flexible(
-                          child: SizedBox(
-                            height: context.dynamicHeight(50),
-                          )),
                       Flexible(
                         child: TextFormField(
                           onSaved: viewModel.savePassword,
                           obscureText: viewModel.showPassword,
                           decoration: InputDecoration(
-                            hintText: 'Şifre',
+                            labelText: 'Şifre',
                             suffixIcon: InkWell(
                               onTap: viewModel.showHidePassword,
                               child: Icon(EvaIcons.eyeOff2),
                             ),
                           ),
-                        ),
+                        ).widgetPadding(),
                       ),
                       Align(
                         alignment: Alignment.centerRight,
@@ -87,51 +89,47 @@ class Login extends StatelessWidget {
                               'Parolamı Unuttum',
                               style: Theme.of(context)
                                   .textTheme
-                                  .bodyText1
-                                  ?.copyWith(decoration: TextDecoration.underline),
+                                  .bodyText2
+                                  ?.copyWith(
+                                      decoration: TextDecoration.underline),
                             )),
                       ),
-                      Flexible(
-                          child: SizedBox(
-                            height: context.dynamicHeight(25),
-                          )),
                       Flexible(
                         child: CustomButton(
                           text: 'Giriş Yap',
                           onTap: viewModel.login,
-                        ),
+                          color: AppColor.customYellow,
+                        ).widgetPadding(),
                       ),
-                      Flexible(
-                          child: SizedBox(
-                            height: context.dynamicHeight(80),
-                          )),
                       Flexible(
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
                             Flexible(
-                                child:
-                                Image.asset(ImageConstants.otherOptionsLeft)),
+                                child: Image.asset(
+                                    ImageConstants.otherOptionsLeft)),
                             Flexible(
-                              child: Text(
-                                'Ya da bunlardan biriyle devam et!',
-                                style: Theme.of(context)
-                                    .textTheme
-                                    .bodyText1
-                                    ?.copyWith(fontSize: 12),
-                                textAlign: TextAlign.center,
+                              flex: 2,
+                              child: Padding(
+                                padding: EdgeInsets.symmetric(
+                                    horizontal: context.dynamicWidth(2)),
+                                child: AutoSizeText(
+                                  'Ya da bunlardan biriyle devam et!',
+                                  maxLines: 2,
+                                  textAlign: TextAlign.center,
+                                ),
                               ),
                             ),
                             Flexible(
-                                child:
-                                Image.asset(ImageConstants.otherOptionsRight)),
+                                child: Image.asset(
+                                    ImageConstants.otherOptionsRight)),
                           ],
-                        ),
+                        ).widgetPadding(),
                       ),
                       Flexible(
                           child: SizedBox(
-                            height: context.dynamicHeight(50),
-                          )),
+                        height: context.dynamicHeight(10),
+                      )),
                       Flexible(
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -139,23 +137,26 @@ class Login extends StatelessWidget {
                             CustomCircleButton(
                               onTap: viewModel.loginWithGmail,
                               icon: EvaIcons.google,
+                              iconColor: AppColor.customPink,
                             ),
                             CustomCircleButton(
                               onTap: viewModel.loginWitFacebook,
                               icon: EvaIcons.facebook,
+                              iconColor: AppColor.customPink,
                             ),
                             CustomCircleButton(
                               onTap: viewModel.loginWithApple,
                               icon: Ionicons.logo_apple,
+                              iconColor: AppColor.customPink,
                             ),
                           ],
-                        ),
+                        ).widgetPadding(),
                       ),
                     ],
-                  ).pagePadding(horizontal: 12),
+                  ).pagePadding(horizontal: 12, vertical: 60),
                 ),
               ),
-            ]),
+            ],
           ),
         ),
       );

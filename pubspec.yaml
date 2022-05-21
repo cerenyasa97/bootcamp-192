@@ -29,6 +29,7 @@ dependencies:
   # Use with the CupertinoIcons class for iOS style icons.
   eva_icons_flutter: ^3.1.0
   cupertino_icons: ^1.0.2
+  auto_size_text: ^3.0.0
   firebase_core: ^1.16.0
   firebase_auth: ^3.3.17
   google_fonts: ^2.0.0
@@ -56,6 +57,7 @@ flutter:
     - assets/images/
     - assets/images/onboard/
     - assets/images/login/
+    - assets/images/register/
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
