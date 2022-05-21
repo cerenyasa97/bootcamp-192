@@ -4,7 +4,6 @@ import 'package:flutter/cupertino.dart';
 import 'package:swapy/core/base/view_model/base_view_model.dart';
 import 'package:swapy/core/navigation/navigation_service.dart';
 import 'package:swapy/core/navigation/router.dart';
-import 'package:swapy/core/widget/dialog/util/custom_show_dialog.dart';
 import 'package:swapy/core/widget/dialog/util/show_confirm_dialog.dart';
 import 'package:swapy/screens/register/model/register_request_model.dart';
 import 'package:swapy/screens/register/service/register_service.dart';
