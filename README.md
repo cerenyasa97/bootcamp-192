@@ -105,6 +105,44 @@ Sprint Review katılımcıları:
 # Sprint 2
 
 
+- **Sprint Notları**: 
+
+- **Sprint içinde tamamlanması tahmin edilen puan**:
+
+- **Puan tamamlama mantığı**: 
+
+- **Backlog düzeni ve Story seçimleri**: 
+
+Story'ler yapılacak işlere (task'lere) bölünmüştür. Miro Board'da gözüken kırmızı item'lar yapılacak işleri (task) gösterirken, mavi item'lar story'leri temsil etmektedir.
+
+- **Daily Scrum**: 
+
+- **Sprint board update**: Sprint board screenshotları: 
+
+
+- **Ürün Durumu**: Ekran görüntüleri:
+
+
+
+- **Sprint Review**: 
+
+
+
+
+Sprint Review katılımcıları: 
+
+- Sibel Güleş: Product Owner
+- Azim Güneş: Scrum Master
+- Ceren Yaşa: Team Member/Developer
+- Fatma Nur Zehra Çaçan: Team Member/Developer
+- Melike Sena Yurdakul: Team Member/Developer
+
+- **Sprint Retrospective:**
+ 
+
+-**Diğer Notlar**:
+
+
 ---
 
 # Sprint 3
