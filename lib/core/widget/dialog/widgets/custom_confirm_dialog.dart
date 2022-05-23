@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:swapy/core/constants/color/color.dart';
 import 'package:swapy/core/navigation/navigation_service.dart';
 import 'custom_dynamic_dialog.dart';
 
@@ -40,7 +41,15 @@ class CustomConfirmDialog extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) => CustomDynamicDialog(
-          title: title != null ? Text(title!) : null,
+          title: title != null
+              ? Text(
+                  title!,
+                  style: Theme.of(context)
+                      .textTheme
+                      .headline5
+                      ?.copyWith(color: AppColor.customPink),
+                )
+              : null,
           content: title != null ? Text(contentText!) : null,
           actions: [
             if (!justShowConfirm)

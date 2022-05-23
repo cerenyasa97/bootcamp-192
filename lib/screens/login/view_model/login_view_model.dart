@@ -4,6 +4,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:swapy/core/base/view_model/base_view_model.dart';
 import 'package:swapy/core/navigation/navigation_service.dart';
 import 'package:swapy/core/navigation/router.dart';
+import 'package:swapy/core/widget/dialog/util/show_confirm_dialog.dart';
 import 'package:swapy/screens/login/model/login_request_model.dart';
 import 'package:swapy/screens/login/service/login_service.dart';
 
@@ -31,14 +32,18 @@ class LoginViewModel extends BaseViewModel {
   void forgotPassword() {}
 
   void login() async {
-    if(formKey.currentState != null) {
+    if (formKey.currentState != null) {
       isLoading = true;
       formKey.currentState!.save();
-      if (userRequest.isNotEmpty) {
-        user = await service.loginWithEmailAndPassword(userRequest);
-        if (user != null) {
-          navigationService.navigateReplacement(AppRouter.afterLogin);
+      try {
+        if (userRequest.isNotEmpty) {
+          user = await service.loginWithEmailAndPassword(userRequest);
+          if (user != null) {
+            navigationService.navigateReplacement(AppRouter.afterLogin);
+          }
         }
+      } catch (e) {
+        showConfirmDialog(title: 'Hata', contentText: e.toString());
       }
       isLoading = false;
     }
@@ -50,7 +55,7 @@ class LoginViewModel extends BaseViewModel {
 
   void loginWithApple() {}
 
-  void showHidePassword(){
+  void showHidePassword() {
     showPassword = !showPassword;
     notifyListeners();
   }

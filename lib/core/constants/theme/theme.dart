@@ -1,51 +1,26 @@
 import 'package:flutter/material.dart';
-
-final customTextColor = MaterialColor(4282729540, {
-  50: Color(0xfff2f2f2),
-  100: Color(0xffe6e5e5),
-  200: Color(0xffcccccc),
-  300: Color(0xffb3b2b2),
-  400: Color(0xff9a9898),
-  500: Color(0xff807f7f),
-  600: Color(0xff676565),
-  700: Color(0xff4d4c4c),
-  800: Color(0xff333333),
-  900: Color(0xff1a1919)
-});
-
-final customGreyColor = MaterialColor(4294177779, {
-  50: Color(0xfff2f2f2),
-  100: Color(0xffe6e6e6),
-  200: Color(0xffcccccc),
-  300: Color(0xffb3b3b3),
-  400: Color(0xff999999),
-  500: Color(0xff808080),
-  600: Color(0xff666666),
-  700: Color(0xff4d4d4d),
-  800: Color(0xff333333),
-  900: Color(0xff191919)
-});
-
-final customSwapyColor = MaterialColor(4294137429, {
-  50: Color(0xfffde7e7),
-  100: Color(0xfffcd0cf),
-  200: Color(0xfff8a0a0),
-  300: Color(0xfff57170),
-  400: Color(0xfff24240),
-  500: Color(0xffee1211),
-  600: Color(0xffbf0f0d),
-  700: Color(0xff8f0b0a),
-  800: Color(0xff5f0707),
-  900: Color(0xff300403)
-});
+import 'package:google_fonts/google_fonts.dart';
+import 'package:swapy/core/constants/color/color.dart';
 
 final ThemeData swapyLightTheme = ThemeData(
+  primarySwatch: MaterialColor(4283535582, {
+    50: Color(0xffeaf1fb),
+    100: Color(0xffd4e4f7),
+    200: Color(0xffa9c8ef),
+    300: Color(0xff7eade7),
+    400: Color(0xff5492de),
+    500: Color(0xff2976d6),
+    600: Color(0xff215fab),
+    700: Color(0xff184781),
+    800: Color(0xff102f56),
+    900: Color(0xff08182b)
+  }),
   brightness: Brightness.light,
-  primaryColor: Color(0xfff35655),
-  primaryColorLight: Color(0xfffcd0cf),
-  primaryColorDark: Color(0xff8f0b0a),
+  primaryColor: Color(0xff5190de),
+  primaryColorLight: Color(0xffd4e4f7),
+  primaryColorDark: Color(0xff184781),
   canvasColor: Color(0xfffafafa),
-  scaffoldBackgroundColor: Color(0xfffafafa),
+  scaffoldBackgroundColor: Color(0xffffffff),
   bottomAppBarColor: Color(0xffffffff),
   cardColor: Color(0xffffffff),
   dividerColor: Color(0x1f000000),
@@ -54,25 +29,25 @@ final ThemeData swapyLightTheme = ThemeData(
   selectedRowColor: Color(0xfff5f5f5),
   unselectedWidgetColor: Color(0x8a000000),
   disabledColor: Color(0x61000000),
-  toggleableActiveColor: Color(0xffbf0f0d),
-  secondaryHeaderColor: Color(0xfffde7e7),
-  backgroundColor: Color(0xfff8a0a0),
+  toggleableActiveColor: Color(0xff215fab),
+  secondaryHeaderColor: Color(0xffeaf1fb),
+  backgroundColor: Color(0xffa9c8ef),
   dialogBackgroundColor: Color(0xffffffff),
-  indicatorColor: Color(0xffee1211),
+  indicatorColor: Color(0xff2976d6),
   hintColor: Color(0x8a000000),
   errorColor: Color(0xffd32f2f),
   buttonTheme: ButtonThemeData(
     textTheme: ButtonTextTheme.normal,
     minWidth: 88,
-    height: 44,
-    padding: EdgeInsets.only(top: 12, bottom: 12, left: 16, right: 16),
+    height: 36,
+    padding: EdgeInsets.only(top: 0, bottom: 0, left: 16, right: 16),
     shape: RoundedRectangleBorder(
       side: BorderSide(
         color: Color(0xff000000),
         width: 0,
         style: BorderStyle.none,
       ),
-      borderRadius: BorderRadius.all(Radius.circular(12)),
+      borderRadius: BorderRadius.all(Radius.circular(2.0)),
     ),
     alignedDropdown: false,
     buttonColor: Color(0xffe0e0e0),
@@ -82,10 +57,10 @@ final ThemeData swapyLightTheme = ThemeData(
     focusColor: Color(0x1f000000),
     hoverColor: Color(0x0a000000),
     colorScheme: ColorScheme(
-      primary: Color(0xfff35655),
-      secondary: Color(0xffee1211),
+      primary: Color(0xff5190de),
+      secondary: Color(0xff2976d6),
       surface: Color(0xffffffff),
-      background: Color(0xfff8a0a0),
+      background: Color(0xffa9c8ef),
       error: Color(0xffd32f2f),
       onPrimary: Color(0xffffffff),
       onSecondary: Color(0xffffffff),
@@ -96,273 +71,193 @@ final ThemeData swapyLightTheme = ThemeData(
     ),
   ),
   textTheme: TextTheme(
-    headline1: TextStyle(
-      color: customTextColor,
+    headline1: GoogleFonts.montserrat(
+      color: Color(0x8a000000),
       fontSize: 32,
       fontWeight: FontWeight.bold,
       fontStyle: FontStyle.normal,
     ),
-    headline2: TextStyle(
-      color: customTextColor,
-      fontSize: 32,
-      fontWeight: FontWeight.w400,
-      fontStyle: FontStyle.normal,
-    ),
-    headline3: TextStyle(
-      color: customTextColor,
+    headline2: GoogleFonts.montserrat(
+      color: Color(0x8a000000),
       fontSize: 28,
-      fontWeight: FontWeight.bold,
+      fontWeight: FontWeight.w700,
       fontStyle: FontStyle.normal,
     ),
-    headline4: TextStyle(
-      color: customTextColor,
-      fontSize: 28,
-      fontWeight: FontWeight.w400,
-      fontStyle: FontStyle.normal,
-    ),
-    headline5: TextStyle(
-      color: customTextColor,
+    headline3: GoogleFonts.montserrat(
+      color: Colors.black,
       fontSize: 24,
-      fontWeight: FontWeight.bold,
+      fontWeight: FontWeight.w700,
       fontStyle: FontStyle.normal,
     ),
-    headline6: TextStyle(
-      color: customTextColor,
+    headline4: GoogleFonts.montserrat(
+      color: Color(0x8a000000),
       fontSize: 24,
-      fontWeight: FontWeight.w400,
+      fontWeight: FontWeight.w500,
       fontStyle: FontStyle.normal,
     ),
-    subtitle1: TextStyle(
-      color: customTextColor,
+    headline5: GoogleFonts.montserrat(
+      color: Color(0xdd000000),
       fontSize: 20,
-      fontWeight: FontWeight.w600,
+      fontWeight: FontWeight.w700,
       fontStyle: FontStyle.normal,
     ),
-    subtitle2: TextStyle(
-      color: customTextColor,
+    headline6: GoogleFonts.montserrat(
+      color: Color(0xdd000000),
       fontSize: 20,
-      fontWeight: FontWeight.w400,
+      fontWeight: FontWeight.w500,
       fontStyle: FontStyle.normal,
     ),
-    bodyText1: TextStyle(
-      color: customTextColor,
+    subtitle1: GoogleFonts.montserrat(
+      color: Color(0xdd000000),
       fontSize: 16,
-      fontWeight: FontWeight.w600,
+      fontWeight: FontWeight.w700,
       fontStyle: FontStyle.normal,
     ),
-    bodyText2: TextStyle(
-      color: customTextColor,
+    subtitle2: GoogleFonts.montserrat(
+      color: Color(0xdd000000),
       fontSize: 16,
       fontWeight: FontWeight.w400,
       fontStyle: FontStyle.normal,
     ),
-    caption: TextStyle(
-      color: customTextColor,
+    bodyText1: GoogleFonts.montserrat(
+      color: Color(0xdd000000),
+      fontSize: 14,
+      fontWeight: FontWeight.w500,
+      fontStyle: FontStyle.normal,
+    ),
+    bodyText2: GoogleFonts.montserrat(
+      color: Color(0xdd000000),
       fontSize: 12,
+      fontWeight: FontWeight.w500,
+      fontStyle: FontStyle.normal,
+    ),
+    caption: GoogleFonts.montserrat(
+      color: Color(0x8a000000),
+      fontSize: 13,
+      fontWeight: FontWeight.w500,
+      fontStyle: FontStyle.normal,
+    ),
+    button: GoogleFonts.montserrat(
+      color: Color(0xdd000000),
+      fontSize: 16,
+      fontWeight: FontWeight.w700,
+      fontStyle: FontStyle.normal,
+    ),
+    overline: GoogleFonts.montserrat(
+      color: Color(0xff000000),
+      fontSize: null,
       fontWeight: FontWeight.w400,
       fontStyle: FontStyle.normal,
     ),
-    button: TextStyle(
-      color: customTextColor,
-      fontSize: 24,
+  ),
+  primaryTextTheme: TextTheme(
+    headline1: GoogleFonts.montserrat(
+      color: Color(0x8a000000),
+      fontSize: 32,
       fontWeight: FontWeight.bold,
       fontStyle: FontStyle.normal,
     ),
-    overline: TextStyle(
-      color: customTextColor,
+    headline2: GoogleFonts.montserrat(
+      color: Color(0x8a000000),
+      fontSize: 28,
+      fontWeight: FontWeight.w700,
+      fontStyle: FontStyle.normal,
+    ),
+    headline3: GoogleFonts.montserrat(
+      color: Color(0x8a000000),
+      fontSize: 24,
+      fontWeight: FontWeight.w700,
+      fontStyle: FontStyle.normal,
+    ),
+    headline4: GoogleFonts.montserrat(
+      color: Color(0x8a000000),
+      fontSize: 24,
+      fontWeight: FontWeight.w500,
+      fontStyle: FontStyle.normal,
+    ),
+    headline5: GoogleFonts.montserrat(
+      color: Color(0xdd000000),
+      fontSize: 20,
+      fontWeight: FontWeight.w700,
+      fontStyle: FontStyle.normal,
+    ),
+    headline6: GoogleFonts.montserrat(
+      color: Color(0xdd000000),
+      fontSize: 20,
+      fontWeight: FontWeight.w500,
+      fontStyle: FontStyle.normal,
+    ),
+    subtitle1: GoogleFonts.montserrat(
+      color: Color(0xdd000000),
+      fontSize: 16,
+      fontWeight: FontWeight.w700,
+      fontStyle: FontStyle.normal,
+    ),
+    subtitle2: GoogleFonts.montserrat(
+      color: Color(0xdd000000),
+      fontSize: 16,
+      fontWeight: FontWeight.w400,
+      fontStyle: FontStyle.normal,
+    ),
+    bodyText1: GoogleFonts.montserrat(
+      color: Color(0xdd000000),
+      fontSize: 14,
+      fontWeight: FontWeight.w500,
+      fontStyle: FontStyle.normal,
+    ),
+    bodyText2: GoogleFonts.montserrat(
+      color: Color(0xdd000000),
+      fontSize: 12,
+      fontWeight: FontWeight.w500,
+      fontStyle: FontStyle.normal,
+    ),
+    caption: GoogleFonts.montserrat(
+      color: Color(0x8a000000),
+      fontSize: 13,
+      fontWeight: FontWeight.w500,
+      fontStyle: FontStyle.normal,
+    ),
+    button: GoogleFonts.montserrat(
+      color: Color(0xdd000000),
+      fontSize: 16,
+      fontWeight: FontWeight.w700,
+      fontStyle: FontStyle.normal,
+    ),
+    overline: GoogleFonts.montserrat(
+      color: Color(0xff000000),
       fontSize: null,
       fontWeight: FontWeight.w400,
       fontStyle: FontStyle.normal,
     ),
   ),
-  /*primaryTextTheme: TextTheme(
-    display4: TextStyle(
-      color: Color(0xb3ffffff),
-      fontSize: null,
-      fontWeight: FontWeight.w400,
-      fontStyle: FontStyle.normal,
-    ),
-    display3: TextStyle(
-      color: Color(0xb3ffffff),
-      fontSize: null,
-      fontWeight: FontWeight.w400,
-      fontStyle: FontStyle.normal,
-    ),
-    display2: TextStyle(
-      color: Color(0xb3ffffff),
-      fontSize: null,
-      fontWeight: FontWeight.w400,
-      fontStyle: FontStyle.normal,
-    ),
-    display1: TextStyle(
-      color: Color(0xb3ffffff),
-      fontSize: null,
-      fontWeight: FontWeight.w400,
-      fontStyle: FontStyle.normal,
-    ),
-    headline: TextStyle(
-      color: Color(0xffffffff),
-      fontSize: null,
-      fontWeight: FontWeight.w400,
-      fontStyle: FontStyle.normal,
-    ),
-    title: TextStyle(
-      color: Color(0xffffffff),
-      fontSize: null,
-      fontWeight: FontWeight.w400,
-      fontStyle: FontStyle.normal,
-    ),
-    subhead: TextStyle(
-      color: Color(0xffffffff),
-      fontSize: null,
-      fontWeight: FontWeight.w400,
-      fontStyle: FontStyle.normal,
-    ),
-    body2: TextStyle(
-      color: Color(0xffffffff),
-      fontSize: null,
-      fontWeight: FontWeight.w400,
-      fontStyle: FontStyle.normal,
-    ),
-    body1: TextStyle(
-      color: Color(0xffffffff),
-      fontSize: null,
-      fontWeight: FontWeight.w400,
-      fontStyle: FontStyle.normal,
-    ),
-    caption: TextStyle(
-      color: Color(0xb3ffffff),
-      fontSize: null,
-      fontWeight: FontWeight.w400,
-      fontStyle: FontStyle.normal,
-    ),
-    button: TextStyle(
-      color: Color(0xffffffff),
-      fontSize: null,
-      fontWeight: FontWeight.w400,
-      fontStyle: FontStyle.normal,
-    ),
-    subtitle: TextStyle(
-      color: Color(0xffffffff),
-      fontSize: null,
-      fontWeight: FontWeight.w400,
-      fontStyle: FontStyle.normal,
-    ),
-    overline: TextStyle(
-      color: Color(0xffffffff),
-      fontSize: null,
-      fontWeight: FontWeight.w400,
-      fontStyle: FontStyle.normal,
-    ),
-  ),
-  accentTextTheme: TextTheme(
-    display4: TextStyle(
-      color: Color(0xb3ffffff),
-      fontSize: null,
-      fontWeight: FontWeight.w400,
-      fontStyle: FontStyle.normal,
-    ),
-    display3: TextStyle(
-      color: Color(0xb3ffffff),
-      fontSize: null,
-      fontWeight: FontWeight.w400,
-      fontStyle: FontStyle.normal,
-    ),
-    display2: TextStyle(
-      color: Color(0xb3ffffff),
-      fontSize: null,
-      fontWeight: FontWeight.w400,
-      fontStyle: FontStyle.normal,
-    ),
-    display1: TextStyle(
-      color: Color(0xb3ffffff),
-      fontSize: null,
-      fontWeight: FontWeight.w400,
-      fontStyle: FontStyle.normal,
-    ),
-    headline: TextStyle(
-      color: Color(0xffffffff),
-      fontSize: null,
-      fontWeight: FontWeight.w400,
-      fontStyle: FontStyle.normal,
-    ),
-    title: TextStyle(
-      color: Color(0xffffffff),
-      fontSize: null,
-      fontWeight: FontWeight.w400,
-      fontStyle: FontStyle.normal,
-    ),
-    subhead: TextStyle(
-      color: Color(0xffffffff),
-      fontSize: null,
-      fontWeight: FontWeight.w400,
-      fontStyle: FontStyle.normal,
-    ),
-    body2: TextStyle(
-      color: Color(0xffffffff),
-      fontSize: null,
-      fontWeight: FontWeight.w400,
-      fontStyle: FontStyle.normal,
-    ),
-    body1: TextStyle(
-      color: Color(0xffffffff),
-      fontSize: null,
-      fontWeight: FontWeight.w400,
-      fontStyle: FontStyle.normal,
-    ),
-    caption: TextStyle(
-      color: Color(0xb3ffffff),
-      fontSize: null,
-      fontWeight: FontWeight.w400,
-      fontStyle: FontStyle.normal,
-    ),
-    button: TextStyle(
-      color: Color(0xffffffff),
-      fontSize: null,
-      fontWeight: FontWeight.w400,
-      fontStyle: FontStyle.normal,
-    ),
-    subtitle: TextStyle(
-      color: Color(0xffffffff),
-      fontSize: null,
-      fontWeight: FontWeight.w400,
-      fontStyle: FontStyle.normal,
-    ),
-    overline: TextStyle(
-      color: Color(0xffffffff),
-      fontSize: null,
-      fontWeight: FontWeight.w400,
-      fontStyle: FontStyle.normal,
-    ),
-  ),*/
   inputDecorationTheme: InputDecorationTheme(
-    labelStyle: TextStyle(
-      color: customTextColor,
-      fontSize: 16,
-      fontWeight: FontWeight.w600,
+    labelStyle: GoogleFonts.montserrat(
+      color: AppColor.customGrey.shade800,
+      fontSize: 14,
+      fontWeight: FontWeight.w500,
       fontStyle: FontStyle.normal,
     ),
-    helperStyle: TextStyle(
-      color: customTextColor,
-      fontSize: 16,
-      fontWeight: FontWeight.w400,
+    helperStyle: GoogleFonts.montserrat(
+      color: AppColor.customGrey.shade800,
+      fontSize: 14,
+      fontWeight: FontWeight.w500,
       fontStyle: FontStyle.normal,
     ),
-    hintStyle: TextStyle(
-      color: customTextColor,
-      fontSize: 16,
-      fontWeight: FontWeight.w600,
+    hintStyle: GoogleFonts.montserrat(
+      color: AppColor.customGrey.shade800,
+      fontSize: 14,
+      fontWeight: FontWeight.w500,
       fontStyle: FontStyle.normal,
     ),
-    errorStyle: TextStyle(
-      color: Colors.red,
-      fontSize: 12,
+    errorStyle: GoogleFonts.montserrat(
+      color: Color(0xdd000000),
+      fontSize: 10,
       fontWeight: FontWeight.w400,
       fontStyle: FontStyle.normal,
     ),
     errorMaxLines: null,
     isDense: false,
-    contentPadding: EdgeInsets.only(top: 16, bottom: 16, left: 12, right: 12),
+    contentPadding: EdgeInsets.only(top: 16, bottom: 16, left: 16, right: 16),
     isCollapsed: false,
     prefixStyle: TextStyle(
       color: Color(0xdd000000),
@@ -383,29 +278,29 @@ final ThemeData swapyLightTheme = ThemeData(
       fontStyle: FontStyle.normal,
     ),
     filled: true,
-    fillColor: customGreyColor,
+    fillColor: AppColor.customGrey,
     errorBorder: OutlineInputBorder(
-      borderSide: BorderSide(color: customGreyColor),
+      borderSide: BorderSide(color: AppColor.customGrey),
       borderRadius: BorderRadius.circular(15),
     ),
     focusedBorder: OutlineInputBorder(
-      borderSide: BorderSide(color: customGreyColor),
+      borderSide: BorderSide(color: AppColor.customGrey),
       borderRadius: BorderRadius.circular(15),
     ),
     focusedErrorBorder: OutlineInputBorder(
-      borderSide: BorderSide(color: customGreyColor),
+      borderSide: BorderSide(color: AppColor.customGrey),
       borderRadius: BorderRadius.circular(15),
     ),
     disabledBorder: OutlineInputBorder(
-      borderSide: BorderSide(color: customGreyColor),
+      borderSide: BorderSide(color: AppColor.customGrey),
       borderRadius: BorderRadius.circular(15),
     ),
     enabledBorder: OutlineInputBorder(
-      borderSide: BorderSide(color: customGreyColor),
+      borderSide: BorderSide(color: AppColor.customGrey),
       borderRadius: BorderRadius.circular(15),
     ),
     border: OutlineInputBorder(
-      borderSide: BorderSide(color: customGreyColor),
+      borderSide: BorderSide(color: AppColor.customGrey),
       borderRadius: BorderRadius.circular(15),
     ),
   ),
@@ -466,7 +361,7 @@ final ThemeData swapyLightTheme = ThemeData(
       fontWeight: FontWeight.w400,
       fontStyle: FontStyle.normal,
     ),
-    secondarySelectedColor: Color(0x3df35655),
+    secondarySelectedColor: Color(0x3d5190de),
     selectedColor: Color(0x3d000000),
     shape: StadiumBorder(
         side: BorderSide(
@@ -483,5 +378,5 @@ final ThemeData swapyLightTheme = ThemeData(
       style: BorderStyle.none,
     ),
     borderRadius: BorderRadius.all(Radius.circular(0.0)),
-  )), textSelectionTheme: TextSelectionThemeData(cursorColor: Color(0xff4285f4), selectionColor: Color(0xfff8a0a0), selectionHandleColor: Color(0xfff57170),), colorScheme: ColorScheme.fromSwatch(primarySwatch: customSwapyColor).copyWith(secondary: Color(0xffee1211)),
+  )),
 );

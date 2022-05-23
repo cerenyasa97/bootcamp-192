@@ -1,0 +1,54 @@
+{
+  "project_info": {
+    "project_number": "547020794052",
+    "project_id": "swapy-fd548",
+    "storage_bucket": "swapy-fd548.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:547020794052:android:5896ea53fef453a2e1c191",
+        "android_client_info": {
+          "package_name": "com.oua.swapy"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "547020794052-c9n5gu18m6j5qaam4rjjvgbbpcgbk7tl.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.oua.swapy",
+            "certificate_hash": "abb665daf30ccc8913d9cb614d9668cb2d417e00"
+          }
+        },
+        {
+          "client_id": "547020794052-7a3dgi1sunkqm965qlm9647b3ds2clkf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAOwKGjC6NxsdsqPV2GKsSXpBcNKGnztPU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "547020794052-7a3dgi1sunkqm965qlm9647b3ds2clkf.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "547020794052-7j26agb33hg2hsbv8m16k754nsu9uf0f.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.oua.swapy"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

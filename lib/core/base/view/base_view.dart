@@ -30,11 +30,14 @@ class BaseView<T extends BaseViewModel> extends StatelessWidget {
             )
           : Stack(
               children: [
-                builder!(context, viewModel),
+                if (builder != null) builder!(context, viewModel),
                 Visibility(
                     visible: viewModel.isLoading,
-                    child: Center(
-                      child: CircularProgressIndicator(),
+                    child: Container(
+                      color: Colors.white38,
+                      child: Center(
+                        child: CircularProgressIndicator(),
+                      ),
                     ))
               ],
             );

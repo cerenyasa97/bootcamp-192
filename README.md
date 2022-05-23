@@ -112,16 +112,16 @@ Sprint Review katılımcıları:
 
 - **Puan tamamlama mantığı**: Toplamda proje boyunca tamamlanması gereken 380 puanlık backlog bulunmaktadır. 3 sprint'e bölündüğünde 1. Sprint için tamamlanması tahmin edilen puan 100, 2. Sprint için 120 ve 3. Sprint için 160 puan olması gerektiğine karar verildi.
 
-- **Backlog düzeni ve Story seçimleri**: 
+- **Backlog düzeni ve Story seçimleri**:
 
 Story'ler yapılacak işlere (task'lere) bölünmüştür. Miro Board'da gözüken kırmızı item'lar yapılacak işleri (task) gösterirken, mavi item'lar story'leri temsil etmektedir.
 
 - **Daily Scrum**: Daily Scrumların 2. Sprint için Word üzerinden yapılmasına karar verilmiştir.[Swapy - DailyScrumMeetingNotesSprint2](https://github.com/cerenyasa97/swapy/blob/azimgunes/ProjectManagement/Sprint2Documents/Swapy%20-%20DailyScrumMeetingNotesSprint2.docx?raw=true)
 
-- **Sprint board update**: Sprint board screenshotları: 
+- **Sprint board update**: Sprint board screenshotları:
 
-![Backlog 1](https://github.com/cerenyasa97/swapy/blob/2118adb84aa86952805c63f2c275f18bf52102dd/ProjectManagement/Sprint2Documents/Swapy.jpg) 
-![Backlog 2](https://github.com/cerenyasa97/swapy/blob/2118adb84aa86952805c63f2c275f18bf52102dd/ProjectManagement/Sprint2Documents/Swapy%20(1).jpg) 
+![Backlog 1](https://github.com/cerenyasa97/swapy/blob/2118adb84aa86952805c63f2c275f18bf52102dd/ProjectManagement/Sprint2Documents/Swapy.jpg)
+![Backlog 2](https://github.com/cerenyasa97/swapy/blob/2118adb84aa86952805c63f2c275f18bf52102dd/ProjectManagement/Sprint2Documents/Swapy%20(1).jpg)
 ![Backlog 3](https://github.com/cerenyasa97/swapy/blob/2118adb84aa86952805c63f2c275f18bf52102dd/ProjectManagement/Sprint2Documents/Swapy%20(2).jpg)
 
 
@@ -136,14 +136,14 @@ Story'ler yapılacak işlere (task'lere) bölünmüştür. Miro Board'da gözük
   ![Screenshot 6](https://github.com/cerenyasa97/swapy/blob/556e18acfe0ef177105ec1421c029e707a2afb66/ProjectManagement/Sprint2Documents/6.jpg)
 
 
-- **Sprint Review**: 
+- **Sprint Review**:
 
 - Favorilerim sayfasının tasarımı ve kodlanmasına 3. Sprintte devam edilmesine karar verildi.
 - Navigation bar hazırlanması sürecinin uygulama hataları çözüldükten sonra devam edilmesine karar verildi.
-- Profil, Ürün ekleme gibi sayfaların tasarımlarının başlanmasına karar verildi. 
+- Profil, Ürün ekleme gibi sayfaların tasarımlarının başlanmasına karar verildi.
 
 
-Sprint Review katılımcıları: 
+Sprint Review katılımcıları:
 
 - Sibel Güleş: Product Owner
 - Azim Güneş: Scrum Master
@@ -152,7 +152,7 @@ Sprint Review katılımcıları:
 - Melike Sena Yurdakul: Team Member/Developer
 
 - **Sprint Retrospective:**
- 
+
  - 3 . Sprintte tüm ekibin daha fazla odaklanmasına karar verildi.
  - IOS ve Android arasında oluşan farklılıklardan dolayı çıkan hataların giderilmesine karar verildi.
  - Ürün sayfasının iyileştirilmesine karar verildi.
@@ -163,7 +163,7 @@ Sprint Review katılımcıları:
 
 - 2 . Sprint içerisinde Ana Sayfa, Favorilerim, Filtreleme gibi kısımların çalışmalarının başlatılmasına ve bu sprint içerisinde Ana Sayfa tasarımı ve kodlanmasının bitirilmiş olmasına karar verildi.
 - Uygulama Onboard kısmından itibaren UI kısmında değişiklikler yapılmasına karar verildi.
-- Daha renkli "Logo ve Görseller" kullanılarak uygulamanın hedef kitleye daha uygun hale getirilmesine karar verildi. 
+- Daha renkli "Logo ve Görseller" kullanılarak uygulamanın hedef kitleye daha uygun hale getirilmesine karar verildi.
 
 
 ---
