@@ -84,7 +84,7 @@ final ThemeData swapyLightTheme = ThemeData(
       fontStyle: FontStyle.normal,
     ),
     headline3: GoogleFonts.montserrat(
-      color: Color(0x8a000000),
+      color: Colors.black,
       fontSize: 24,
       fontWeight: FontWeight.w700,
       fontStyle: FontStyle.normal,

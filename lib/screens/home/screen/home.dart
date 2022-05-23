@@ -78,7 +78,7 @@ class Home extends StatelessWidget {
                         backgroundColor: viewModel
                             .chipColors[index % viewModel.chipColors.length],
                         label: Text(
-                          viewModel.toyTypes[index],
+                          viewModel.toyTypes[index].title ?? '',
                           style: Theme.of(context)
                               .textTheme
                               .bodyText1
@@ -97,9 +97,14 @@ class Home extends StatelessWidget {
               crossAxisCount: 2,
               mainAxisSpacing: context.dynamicHeight(10),
               crossAxisSpacing: context.dynamicWidth(10),
-              childAspectRatio: .75,
-              children: List.generate(20, (index) => ToyCard()),
-            )
+              childAspectRatio: .6,
+              children: List.generate(
+                  viewModel.toys.length,
+                  (index) => ToyCard(
+                        toy: viewModel.toys[index],
+                    onTap: () => viewModel.navigateToDetail(index),
+                      )),
+            ),
           ],
         ),
       ),

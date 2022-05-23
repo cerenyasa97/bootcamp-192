@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:swapy/screens/home/model/toy_model.dart';
 import 'package:swapy/screens/home/screen/home.dart';
 import 'package:swapy/screens/login/screen/after_login.dart';
 import 'package:swapy/screens/login/screen/login.dart';
 import 'package:swapy/screens/onboard/screen/onboard.dart';
+import 'package:swapy/screens/product_detail/screen/product_detail.dart';
 import 'package:swapy/screens/register/screen/register.dart';
 
 class AppRouter {
@@ -11,6 +13,7 @@ class AppRouter {
   static const String afterLogin = '/after-login';
   static const String register = '/register';
   static const String home = '/home';
+  static const String productDetail = '/product-detail';
 
   static MaterialPageRoute<Object>? generateRoute(RouteSettings routeSettings, {Widget? route}) {
     return MaterialPageRoute(builder: (context) => getPage(routeSettings));
@@ -28,6 +31,8 @@ class AppRouter {
         return Register();
       case '/home':
         return Home();
+      case '/product-detail':
+        return ProductDetail(toy: settings.arguments as Toy,);
       default:
         return Scaffold(
           body: Center(child: Text('No route defined for ${settings.name}')),
