@@ -9,7 +9,7 @@ extension ContextExtension on BuildContext {
       MediaQuery.of(this).size.width * width / 428;
 
   double dynamicHeight(double height) =>
-      MediaQuery.of(this).size.width * height / 926;
+      MediaQuery.of(this).size.height * height / 926;
 
   bool get smallHeightPhone => currentHeight < 600;
 
