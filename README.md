@@ -116,7 +116,7 @@ Sprint Review katılımcıları:
 
 Story'ler yapılacak işlere (task'lere) bölünmüştür. Miro Board'da gözüken kırmızı item'lar yapılacak işleri (task) gösterirken, mavi item'lar story'leri temsil etmektedir.
 
-- **Daily Scrum**: Daily Scrumların 2. Sprint için Word üzerinden yapılmasına karar verilmiştir.[Swapy - DailyScrumMeetingNotesSprint1](https://github.com/cerenyasa97/swapy/blob/azimgunes/ProjectManagement/Sprint2Documents/Swapy%20-%20DailyScrumMeetingNotesSprint2.docx=true)
+- **Daily Scrum**: Daily Scrumların 2. Sprint için Word üzerinden yapılmasına karar verilmiştir.[Swapy - DailyScrumMeetingNotesSprint2](https://github.com/cerenyasa97/swapy/blob/azimgunes/ProjectManagement/Sprint2Documents/Swapy%20-%20DailyScrumMeetingNotesSprint2.docx?raw=true)
 
 - **Sprint board update**: Sprint board screenshotları: 
 
