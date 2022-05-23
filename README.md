@@ -106,9 +106,9 @@ Sprint Review katılımcıları:
 # Sprint 2
 
 
-- **Sprint Notları**: User Story'ler product backlog'ların içine yazılmıştır. Product backlog item'lara tıklandığında hikayelerin detayları okunabilir.
+- **Sprint Notları**: Proje yönetimi için Miro kullanılmıştır.User Story'ler product backlog'ların içine yazılmıştır. Product backlog item'lara tıklandığında hikayelerin detayları okunabilir.
 
-- **Sprint içinde tamamlanması tahmin edilen puan**: 120
+- **Sprint içinde tamamlanması tahmin edilen puan**: 120 puan <> 60 Puan Ana Sayfa Kodlanması + 40 Puan Ana Sayfa&Ürün Sayfası UI Tasarımı + 20 Puan Logo & Görseller
 
 - **Puan tamamlama mantığı**: Toplamda proje boyunca tamamlanması gereken 380 puanlık backlog bulunmaktadır. 3 sprint'e bölündüğünde 1. Sprint için tamamlanması tahmin edilen puan 100, 2. Sprint için 120 ve 3. Sprint için 160 puan olması gerektiğine karar verildi.
 
@@ -116,15 +116,23 @@ Sprint Review katılımcıları:
 
 Story'ler yapılacak işlere (task'lere) bölünmüştür. Miro Board'da gözüken kırmızı item'lar yapılacak işleri (task) gösterirken, mavi item'lar story'leri temsil etmektedir.
 
-- **Daily Scrum**: Daily Scrumların 2. Sprint için Word üzerinden yapılmasına karar verilmiştir.
-
+- **Daily Scrum**: Daily Scrumların 2. Sprint için Word üzerinden yapılmasına karar verilmiştir.[Swapy - DailyScrumMeetingNotesSprint1](https://github.com/cerenyasa97/swapy/blob/2118adb84aa86952805c63f2c275f18bf52102dd/ProjectManagement/Sprint2Documents/Swapy%20-%20DailyScrumMeetingNotesSprint2.docx=true)
 
 - **Sprint board update**: Sprint board screenshotları: 
+
+![Backlog 1](https://github.com/cerenyasa97/swapy/blob/2118adb84aa86952805c63f2c275f18bf52102dd/ProjectManagement/Sprint2Documents/Swapy.jpg) 
+![Backlog 2](https://github.com/cerenyasa97/swapy/blob/2118adb84aa86952805c63f2c275f18bf52102dd/ProjectManagement/Sprint2Documents/Swapy%20(1).jpg) 
+![Backlog 3](https://github.com/cerenyasa97/swapy/blob/2118adb84aa86952805c63f2c275f18bf52102dd/ProjectManagement/Sprint2Documents/Swapy%20(2).jpg)
+
 
 
 - **Ürün Durumu**: Ekran görüntüleri:
 
-
+  ![Screenshot 1](https://github.com/cerenyasa97/swapy/blob/2118adb84aa86952805c63f2c275f18bf52102dd/ProjectManagement/Sprint2Documents/1.jpg)
+  ![Screenshot 2](https://github.com/cerenyasa97/swapy/blob/2118adb84aa86952805c63f2c275f18bf52102dd/ProjectManagement/Sprint2Documents/2.jpg)
+  ![Screenshot 3](https://github.com/cerenyasa97/swapy/blob/2118adb84aa86952805c63f2c275f18bf52102dd/ProjectManagement/Sprint2Documents/3.jpg)
+  ![Screenshot 4](https://github.com/cerenyasa97/swapy/blob/2118adb84aa86952805c63f2c275f18bf52102dd/ProjectManagement/Sprint2Documents/4.jpg)
+  ![Screenshot 5](https://github.com/cerenyasa97/swapy/blob/2118adb84aa86952805c63f2c275f18bf52102dd/ProjectManagement/Sprint2Documents/5.jpg)
 
 - **Sprint Review**: 
 
