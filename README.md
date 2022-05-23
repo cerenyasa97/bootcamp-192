@@ -151,15 +151,15 @@ Sprint Review katılımcıları:
 
 - **Sprint Retrospective:**
  
- -3. Sprintte tüm ekibin daha fazla odaklanmasına karar verildi.
- -IOS ve Android arasında oluşan farklılıklardan dolayı çıkan hataların giderilmesine karar verildi.
- -Ürün sayfasının iyileştirilmesine karar verildi.
- -Uygulama APK versiyonu oluşturularak test çalışmaları yapılmasına karar verildi.
+ - 3. Sprintte tüm ekibin daha fazla odaklanmasına karar verildi.
+ - IOS ve Android arasında oluşan farklılıklardan dolayı çıkan hataların giderilmesine karar verildi.
+ - Ürün sayfasının iyileştirilmesine karar verildi.
+ - Uygulama APK versiyonu oluşturularak test çalışmaları yapılmasına karar verildi.
 
 -**Diğer Notlar**:
 
 
-- 2. Sprint içerisinde Ana Sayfa, Favorilerim, Filtreleme gibi kısımların çalışmalarının başlatılmasına ve bu sprint içerisinde Ana Sayfa tasarımı ve kodlanmasının bitirilmiş olmasına karar verildi.
+- II. Sprint içerisinde Ana Sayfa, Favorilerim, Filtreleme gibi kısımların çalışmalarının başlatılmasına ve bu sprint içerisinde Ana Sayfa tasarımı ve kodlanmasının bitirilmiş olmasına karar verildi.
 - Uygulama Onboard kısmından itibaren UI kısmında değişiklikler yapılmasına karar verildi.
 - Daha renkli "Logo ve Görseller" kullanılarak uygulamanın hedef kitleye daha uygun hale getirilmesine karar verildi. 
 
