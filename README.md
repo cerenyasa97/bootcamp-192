@@ -133,6 +133,8 @@ Story'ler yapılacak işlere (task'lere) bölünmüştür. Miro Board'da gözük
   ![Screenshot 3](https://github.com/cerenyasa97/swapy/blob/2118adb84aa86952805c63f2c275f18bf52102dd/ProjectManagement/Sprint2Documents/3.jpg)
   ![Screenshot 4](https://github.com/cerenyasa97/swapy/blob/2118adb84aa86952805c63f2c275f18bf52102dd/ProjectManagement/Sprint2Documents/4.jpg)
   ![Screenshot 5](https://github.com/cerenyasa97/swapy/blob/2118adb84aa86952805c63f2c275f18bf52102dd/ProjectManagement/Sprint2Documents/5.jpg)
+  ![Screenshot 6](https://github.com/cerenyasa97/swapy/blob/556e18acfe0ef177105ec1421c029e707a2afb66/ProjectManagement/Sprint2Documents/6.jpg)
+
 
 - **Sprint Review**: 
 
