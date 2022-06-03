@@ -104,4 +104,14 @@ class AppColor {
     800: Color(0xff333333),
     900: Color(0xff191919)
   });
+
+  static final List<MaterialColor> allCustomColors = [
+    customGreen,
+    customPurple,
+    customYellow,
+    customTurquoise,
+    customBlue,
+    customOrange,
+    customPink
+  ];
 }

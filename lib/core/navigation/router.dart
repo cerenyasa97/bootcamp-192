@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:swapy/screens/chat_room/screen/chat.dart';
+import 'package:swapy/screens/chat/screen/chat_detail.dart';
 import 'package:swapy/screens/home/model/toy_model.dart';
 import 'package:swapy/screens/home/screen/home.dart';
 import 'package:swapy/screens/login/screen/after_login.dart';
@@ -14,6 +16,8 @@ class AppRouter {
   static const String register = '/register';
   static const String home = '/home';
   static const String productDetail = '/product-detail';
+  static const String chat = '/chat';
+  static const String chatDetail = '/chat-detail';
 
   static MaterialPageRoute<Object>? generateRoute(RouteSettings routeSettings, {Widget? route}) {
     return MaterialPageRoute(builder: (context) => getPage(routeSettings));
@@ -33,6 +37,10 @@ class AppRouter {
         return Home();
       case '/product-detail':
         return ProductDetail(toy: settings.arguments as Toy,);
+      case '/chat':
+        return ChatUsers();
+      case '/chat-detail':
+        return ChatDetail();
       default:
         return Scaffold(
           body: Center(child: Text('No route defined for ${settings.name}')),

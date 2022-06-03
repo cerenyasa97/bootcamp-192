@@ -4,19 +4,18 @@
 
 import 'dart:convert';
 
-class ToyResult {
+import 'package:swapy/core/base/model/base_model.dart';
+
+class ToyResult extends BaseModel{
     ToyResult({
         this.toys,
     });
 
     List<Toy>? toys;
 
-    factory ToyResult.fromRawJson(String str) => ToyResult.fromJson(json.decode(str));
-
-    String toRawJson() => json.encode(toJson());
-
-    factory ToyResult.fromJson(Map<String, dynamic> json) => ToyResult(
-        toys: json["toys"] == null ? null : List<Toy>.from(json["toys"].map((x) => Toy.fromJson(x))),
+    @override
+    fromJson(Map<String, dynamic>? json) => ToyResult(
+        toys: json?["toys"] == null ? null : List<Toy>.from(json!["toys"].map((x) => Toy.fromJson(x))),
     );
 
     Map<String, dynamic> toJson() => {
@@ -28,6 +27,7 @@ class Toy {
     Toy({
         this.toyId,
         this.advertiserRating,
+        this.advertiserId,
         this.advertiserImage,
         this.image,
         this.advertiser,
@@ -39,6 +39,7 @@ class Toy {
     String? toyId;
     double? advertiserRating;
     String? advertiserImage;
+    String? advertiserId;
     String? image;
     String? advertiser;
     String? description;
@@ -53,6 +54,7 @@ class Toy {
         toyId: json["toy_id"] == null ? null : json["toy_id"],
         advertiserRating: json["advertiser_rating"] == null ? null : json["advertiser_rating"],
         advertiserImage: json["advertiser_image"] == null ? null : json["advertiser_image"],
+        advertiserId: json["advertiser_id"] == null ? null : json["advertiser_id"],
         image: json["image"] == null ? null : json["image"],
         advertiser: json["advertiser"] == null ? null : json["advertiser"],
         description: json["description"] == null ? null : json["description"],

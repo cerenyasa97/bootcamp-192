@@ -43,7 +43,7 @@ class AfterLogin extends StatelessWidget {
               ),
             )
           ],
-        ).pagePadding(),
+        ).pageExpandedPadding(),
       ),
     );
   }
