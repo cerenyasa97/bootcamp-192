@@ -11,13 +11,22 @@ import 'package:swapy/core/widget/button/custom_button.dart';
 import 'package:swapy/screens/login/view_model/login_view_model.dart';
 import 'package:swapy/core/extension/context_extension.dart';
 
-class Login extends StatelessWidget {
-  const Login({Key? key}) : super(key: key);
+class Login extends StatefulWidget {
+
+
+  Login({Key? key}) : super(key: key);
+
+  @override
+  State<Login> createState() => _LoginState();
+}
+
+class _LoginState extends State<Login> {
+  final viewModel = LoginViewModel();
 
   @override
   Widget build(BuildContext context) {
     return BaseView<LoginViewModel>(
-        vmBuilder: () => LoginViewModel(), builder: _body);
+        vmBuilder: () => viewModel , builder: _body);
   }
 
   Widget _body(BuildContext context, LoginViewModel viewModel) => Scaffold(
