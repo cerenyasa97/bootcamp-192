@@ -232,7 +232,7 @@ final ThemeData swapyLightTheme = ThemeData(
   ),
   inputDecorationTheme: InputDecorationTheme(
     labelStyle: GoogleFonts.montserrat(
-      color: AppColor.customGrey.shade800,
+      color: AppColor.customGrey.shade600,
       fontSize: 14,
       fontWeight: FontWeight.w500,
       fontStyle: FontStyle.normal,

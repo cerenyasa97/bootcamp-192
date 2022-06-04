@@ -44,14 +44,18 @@ class RegisterViewModel extends BaseViewModel {
   }
 
   void register() async {
-    if (formKey.currentState != null) {
-      formKey.currentState!.save();
-      if (registerRequest.isNotEmpty) {
-        user = await service.register(registerRequest);
-        if (user != null) {
-          navigationService.navigateReplacement(AppRouter.afterLogin);
+    try {
+      if (formKey.currentState != null) {
+        formKey.currentState!.save();
+        if (registerRequest.isNotEmpty) {
+          user = await service.register(registerRequest);
+          if (user != null) {
+            navigationService.navigateReplacement(AppRouter.afterLogin);
+          }
         }
       }
+    } on Exception catch (e) {
+      showConfirmDialog(contentText: e.toString(), isJustConfirm: true);
     }
   }
 

@@ -54,10 +54,10 @@ class CustomButton extends StatelessWidget {
         style: ButtonStyle(
             padding: MaterialStateProperty.all(EdgeInsets.symmetric(
                 vertical: context.dynamicHeight(context.smallHeightPhone
-                    ? 16
+                    ? 10
                     : context.mediumHeightPhone
-                        ? 28
-                        : 32))),
+                        ? 16
+                        : 20))),
             backgroundColor: MaterialStateProperty.all(color),
             shape: MaterialStateProperty.all(RoundedRectangleBorder(
                 borderRadius: BorderRadius.only(

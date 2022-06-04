@@ -3,7 +3,7 @@ import 'package:provider/provider.dart';
 import 'package:swapy/core/base/view_model/base_view_model.dart';
 
 class BaseView<T extends BaseViewModel> extends StatelessWidget {
-  final T Function()? vmBuilder;
+  final T vmBuilder;
   final Widget Function(BuildContext, T)? builder;
 
   const BaseView({Key? key, required this.vmBuilder, required this.builder})
@@ -12,7 +12,7 @@ class BaseView<T extends BaseViewModel> extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ChangeNotifierProvider<T>.value(
-      value: vmBuilder!(),
+      value: vmBuilder,
       child: Consumer<T>(
         builder: _buildScreenContent,
       ),
