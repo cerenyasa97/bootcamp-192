@@ -25,7 +25,7 @@ class MyToysViewModel extends BaseViewModel{
 
   Future swapDone(index) async {
     try {
-      await service.deleteToy(toys[index]);
+      //await service.deleteToy(toys[index]);
       toys.removeAt(index);
     } on Exception catch (e) {
       showConfirmDialog(contentText: e.toString(), isJustConfirm: true);

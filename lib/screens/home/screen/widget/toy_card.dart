@@ -1,6 +1,7 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:ionicons/ionicons.dart';
+import 'package:swapy/core/constants/image/image_constants.dart';
 import 'package:swapy/core/extension/context_extension.dart';
 import 'package:swapy/core/widget/button/custom_button.dart';
 import 'package:swapy/screens/home/model/toy_model.dart';
@@ -31,11 +32,16 @@ class ToyCard extends StatelessWidget {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
-              CachedNetworkImage(
-                imageUrl: toy.image ??
-                    'https://png.pngtree.com/png-vector/20190917/ourmid/pngtree-not-found-line-icon-vectors-png-image_1737850.jpg',
-                //height: context.dynamicHeight(100),
-                fit: BoxFit.contain,
+              Flexible(
+                child: SizedBox(
+                  height: context.dynamicHeight(160),
+                  child: CachedNetworkImage(
+                    imageUrl: toy.image ??
+                        ImageConstants.imageNotFound,
+                    //height: context.dynamicHeight(100),
+                    fit: BoxFit.contain,
+                  ),
+                ),
               ),
               Text(toy.name ?? ''),
               Row(

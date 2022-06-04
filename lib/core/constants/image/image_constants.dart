@@ -16,5 +16,9 @@ class ImageConstants{
   static const afterLogin = imagesPath + login + 'after_login' + png;
   static const tiger = imagesPath + register + 'tiger' + png;
   static const appLogo = imagesPath + home + 'app_logo' + png;
+  static const myToys = imagesPath + home + 'my_toys' + png;
+  static const addToy = imagesPath + home + 'add_toy' + png;
+  static const profile = imagesPath + home + 'profile' + png;
   static const bunny = imagesPath + detail + 'bunny' + png;
+  static const imageNotFound = 'https://png.pngtree.com/png-vector/20190917/ourmid/pngtree-not-found-line-icon-vectors-png-image_1737850.jpg';
 }

@@ -44,9 +44,6 @@ class _HomeBottomNavigationState extends State<HomeBottomNavigation> {
                 Icon(Icons.add_circle_outline, color: chipColors[2]),
             label: ''),
         BottomNavigationBarItem(
-            icon: Icon(Icons.refresh, color: chipColors[3]),
-            label: ''),
-        BottomNavigationBarItem(
             icon: Icon(Icons.person_outline, color: chipColors[4]),
             label: ''),
       ],

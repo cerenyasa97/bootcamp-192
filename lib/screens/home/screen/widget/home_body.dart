@@ -5,6 +5,7 @@ import 'package:provider/provider.dart';
 import 'package:swapy/core/constants/color/color.dart';
 import 'package:swapy/core/constants/image/image_constants.dart';
 import 'package:swapy/core/extension/context_extension.dart';
+import 'package:swapy/core/extension/widget_extension.dart';
 import 'package:swapy/core/widget/button/custom_circle_button.dart';
 import 'package:swapy/screens/chat/chat_service/cloud_massaging.dart';
 import 'package:swapy/screens/home/screen/widget/home_toys_widget.dart';
@@ -30,8 +31,8 @@ class HomeBody extends StatelessWidget {
                   ),
                   Image.asset(
                     ImageConstants.appLogo,
-                    height: context.dynamicHeight(110),
-                  ),
+                    height: context.dynamicHeight(40),
+                  ).widgetPadding(),
                   Consumer<CloudMessagingManager>(
                       builder: (context, model, _) => model.badgeCount != 0
                           ? Badge(

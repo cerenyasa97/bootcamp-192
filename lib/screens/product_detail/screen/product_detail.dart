@@ -72,7 +72,7 @@ class ProductDetail extends StatelessWidget {
                   image: toy.advertiserImage != null
                       ? DecorationImage(
                           image: NetworkImage(
-                              toy.advertiserImage ?? ImageConstants.tiger),
+                              toy.advertiserImage ?? ImageConstants.imageNotFound),
                         )
                       : null),
             ),

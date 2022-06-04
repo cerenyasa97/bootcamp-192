@@ -27,8 +27,9 @@ extension WidgetExtension on Widget {
         padding: edgeInsetsGeometry ??
             EdgeInsets.symmetric(
                 horizontal: context.dynamicWidth(horizontal),
-                vertical: context
-                    .dynamicHeight(context.heightAccordingToSize(vertical))),
+                vertical: context.dynamicHeight(vertical == 0
+                    ? 0
+                    : context.heightAccordingToSize(vertical))),
         child: this,
       );
 

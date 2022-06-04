@@ -7,6 +7,7 @@ import 'package:swapy/core/constants/color/color.dart';
 import 'package:swapy/core/constants/image/image_constants.dart';
 import 'package:swapy/core/extension/context_extension.dart';
 import 'package:swapy/core/widget/button/custom_circle_button.dart';
+import 'package:swapy/screens/add_toy/screen/add_toy.dart';
 import 'package:swapy/screens/chat/chat_service/cloud_massaging.dart';
 import 'package:swapy/screens/home/screen/widget/home_body.dart';
 import 'package:swapy/screens/home/screen/widget/home_bottom_navigation.dart';
@@ -42,6 +43,10 @@ class _HomeState extends State<Home> {
         return HomeBody();
       case 1:
         return MyToys();
+      case 2:
+        return AddToy();
+      case 3:
+        return HomeBody(); // Buraya profil sayfasının classı gelecek
       default:
         return HomeBody();
     }
