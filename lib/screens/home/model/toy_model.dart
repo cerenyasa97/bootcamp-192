@@ -29,6 +29,7 @@ class Toy {
         this.advertiserRating,
         this.advertiserId,
         this.advertiserImage,
+        this.gender,
         this.image,
         this.advertiser,
         this.description,
@@ -42,6 +43,7 @@ class Toy {
     String? advertiserId;
     String? image;
     String? advertiser;
+    String? gender;
     String? description;
     String? name;
     int? coin;
@@ -57,6 +59,7 @@ class Toy {
         advertiserId: json["advertiser_id"] == null ? null : json["advertiser_id"],
         image: json["image"] == null ? null : json["image"],
         advertiser: json["advertiser"] == null ? null : json["advertiser"],
+        gender: json["gender"] == null ? null : json["gender"],
         description: json["description"] == null ? null : json["description"],
         name: json["name"] == null ? null : json["name"],
         coin: json["coin"] == null ? null : json["coin"],
@@ -68,6 +71,8 @@ class Toy {
         "advertiser_image": advertiserImage == null ? null : advertiserImage,
         "image": image == null ? null : image,
         "advertiser": advertiser == null ? null : advertiser,
+        "advertiser_id": advertiserId == null ? null : advertiserId,
+        "gender": gender == null ? null : gender,
         "description": description == null ? null : description,
         "name": name == null ? null : name,
     };

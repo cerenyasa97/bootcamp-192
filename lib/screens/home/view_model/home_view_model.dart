@@ -13,8 +13,8 @@ class HomeViewModel extends BaseViewModel {
   final navigationService = NavigationService.instance;
   final service = HomeService();
 
-  List<Type> toyTypes = [];
-  Type? selectedToyType;
+  List<TType> toyTypes = [];
+  TType? selectedToyType;
   List<Toy> toys = [];
   List<Color> chipColors = [];
   int _selectedTab = 0;
@@ -26,7 +26,6 @@ class HomeViewModel extends BaseViewModel {
       chipColors = service.chipColors;
       toyTypes = (await service.getToyTypes()) ?? [];
       await selectToyType();
-      notifyListeners();
     } on Exception catch (e) {
       showConfirmDialog(contentText: e.toString(), isJustConfirm: true);
     } finally{
@@ -53,13 +52,12 @@ class HomeViewModel extends BaseViewModel {
     try {
       toys = [];
       if (index != null && index != 0) {
-        selectedToyType = toyTypes.firstWhere(
-            (element) => element.typeId == toyTypes[index].typeId); //
+        selectedToyType = toyTypes[index]; //
         if (selectedToyType != null) {
           toys = (await service.getToys(selectedToyType!)) ?? [];
         }
       } else {
-        await Future.forEach(toyTypes, (Type element) async {
+        await Future.forEach(toyTypes, (TType element) async {
           final allToyByTypes = await service.getToys(element);
           if (allToyByTypes != null) toys.addAll(allToyByTypes);
         });
