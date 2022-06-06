@@ -9,6 +9,7 @@ class TextFieldWithLabel extends StatelessWidget {
   final int? maxLine;
   final List<String?>? comboItems;
   final Function(String?)? itemSelected;
+  final bool? isEnabled;
   String? selectedItem;
 
   TextFieldWithLabel(
@@ -18,7 +19,8 @@ class TextFieldWithLabel extends StatelessWidget {
       required this.hintText,
       this.maxLine,
       this.comboItems,
-      this.itemSelected})
+      this.itemSelected,
+      this.isEnabled})
       : super(key: key);
 
   @override
@@ -38,7 +40,7 @@ class TextFieldWithLabel extends StatelessWidget {
           child: TextField(
               focusNode: FocusNode(),
               controller: controller,
-              enabled: comboItems == null,
+              enabled: isEnabled ?? comboItems == null,
               decoration: InputDecoration(hintText: hintText),
               maxLines: maxLine),
         ),

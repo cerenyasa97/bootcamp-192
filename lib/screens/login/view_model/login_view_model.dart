@@ -73,4 +73,8 @@ class LoginViewModel extends BaseViewModel {
     showPassword = !showPassword;
     notifyListeners();
   }
+
+  void clear(){
+    _instance = null;
+  }
 }
