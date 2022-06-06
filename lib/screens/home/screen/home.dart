@@ -12,6 +12,7 @@ import 'package:swapy/screens/chat/chat_service/cloud_massaging.dart';
 import 'package:swapy/screens/home/screen/widget/home_body.dart';
 import 'package:swapy/screens/home/screen/widget/home_bottom_navigation.dart';
 import 'package:swapy/screens/my_toys/screen/my_toys.dart';
+import 'package:swapy/screens/profile/screen/ProfilePage.dart';
 
 class Home extends StatefulWidget {
   Home({Key? key}) : super(key: key);
@@ -46,7 +47,7 @@ class _HomeState extends State<Home> {
       case 2:
         return AddToy();
       case 3:
-        return HomeBody(); // Buraya profil sayfasının classı gelecek
+        return ProfilePage(); // Buraya profil sayfasının classı gelecek
       default:
         return HomeBody();
     }

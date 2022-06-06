@@ -170,4 +170,62 @@ Sprint Review katılımcıları:
 
 # Sprint 3
 
+
+- **Sprint Notları**: Proje yönetimi için Miro kullanılmıştır.User Story'ler product backlog'ların içine yazılmıştır. Product backlog item'lara tıklandığında hikayelerin detayları okunabilir.
+
+- **Sprint içinde tamamlanması tahmin edilen puan**: 160 puan <> Tüm Sayfaların UI Tasarımlarının Yapılması 40 Puan + Kullanıcı Chat Sayfası 40 Puan + Oyuncaklarım&İlanlarım Sayfasının Hazırlanması 40 Puan + Navigation Bar hazırlanması 20 Puan + Profil Sayfasının Hazırlanması 20 Puan
+
+- **Puan tamamlama mantığı**: Toplamda proje boyunca tamamlanması gereken 380 puanlık backlog bulunmaktadır. 3 sprint'e bölündüğünde 1. Sprint için tamamlanması tahmin edilen puan 100, 2. Sprint için 120 ve 3. Sprint için 160 puan olması gerektiğine karar verildi.
+
+- **Backlog düzeni ve Story seçimleri**:
+
+Story'ler yapılacak işlere (task'lere) bölünmüştür. Miro Board'da gözüken kırmızı item'lar yapılacak işleri (task) gösterirken, mavi item'lar story'leri temsil etmektedir.
+
+- **Daily Scrum**: Daily Scrumların 2. Sprint için Word üzerinden yapılmasına karar verilmiştir.[Swapy - DailyScrumMeetingNotesSprint3](https://github.com/cerenyasa97/swapy/blob/e7b62836893f93807250eff179280d97b06a04a3/ProjectManagement/Sprint3Documents/Swapy%20-%20DailyScrumMeetingNotesSprint3.docx?raw=true)
+
+- **Sprint board update**: Sprint board screenshotları:
+
+![Backlog 1](https://github.com/cerenyasa97/swapy/blob/e7b62836893f93807250eff179280d97b06a04a3/ProjectManagement/Sprint3Documents/Swapy%203.1%20Board.jpg)
+![Backlog 2](https://github.com/cerenyasa97/swapy/blob/e7b62836893f93807250eff179280d97b06a04a3/ProjectManagement/Sprint3Documents/Swapy%203.2%20Board.jpg)
+![Backlog 3](https://github.com/cerenyasa97/swapy/blob/e7b62836893f93807250eff179280d97b06a04a3/ProjectManagement/Sprint3Documents/Swapy%203.3%20Board.jpg)
+![Backlog 4](https://github.com/cerenyasa97/swapy/blob/e7b62836893f93807250eff179280d97b06a04a3/ProjectManagement/Sprint3Documents/Swapy%203.4%20Board.jpg)
+
+
+
+
+**Ürün Durumu**: Ekran görüntüleri:
+
+  ![Screenshot 1](https://github.com/cerenyasa97/swapy/blob/e7b62836893f93807250eff179280d97b06a04a3/ProjectManagement/Sprint3Documents/%C4%B0lanlar%C4%B1m.jpg)
+  ![Screenshot 2](https://github.com/cerenyasa97/swapy/blob/e7b62836893f93807250eff179280d97b06a04a3/ProjectManagement/Sprint3Documents/Teklifler.jpg)
+  ![Screenshot 3](https://github.com/cerenyasa97/swapy/blob/e7b62836893f93807250eff179280d97b06a04a3/ProjectManagement/Sprint3Documents/Chat%20Sayfas%C4%B1.jpg)
+  ![Screenshot 4](https://github.com/cerenyasa97/swapy/blob/e7b62836893f93807250eff179280d97b06a04a3/ProjectManagement/Sprint3Documents/Profil.png)
+
+
+**Sprint Review**:
+
+- Favorilerim Sayfasının uygulama fikrinin desteklenmesi noktasında ileri bir zamanda yapılabileceğine karar verildi.
+- Filtreleme Özelliğinin uygulamanın ileri zamanda ugulamanın marketlerde sunulması durumunda yapılmasına karar verildi.
+- Proje kapsamının Sprint dahilinde dahilinde daraltılmasına karar verildi.
+
+Sprint Review katılımcıları:
+
+- Sibel Güleş: Product Owner
+- Azim Güneş: Scrum Master
+- Ceren Yaşa: Team Member/Developer
+- Fatma Nur Zehra Çaçan: Team Member/Developer
+- Melike Sena Yurdakul: Team Member/Developer
+
+**Sprint Retrospective:**
+
+ - Ekip üyeleri eksik olduğu konularda birbirine geri bildirimde bulundu.
+ - IOS ve Android arasında oluşan farklılıklarının birçoğu giderildi, bundan sonra yapılan çalışmalarda dikkatli olunması konuşuldu.
+ - Proje ekibinin yazılım noktasında eksikleri tespit edildi.
+ - 8 Haziran teslim günü için planlama yapıldı.
+
+**Diğer Notlar**:
+
+
+- Zaman kısıtından dolayı proje kapsamı daraltıldı.
+- Bazı sayfalar ekip kararı ile gelecekte düşünülmek üzere rafa kaldırıldı.
+
 ---
