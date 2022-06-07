@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:swapy/core/base/view_model/base_view_model.dart';
+import 'package:swapy/core/extension/context_extension.dart';
 
 class BaseView<T extends BaseViewModel> extends StatelessWidget {
   final T vmBuilder;
@@ -11,9 +12,9 @@ class BaseView<T extends BaseViewModel> extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ChangeNotifierProvider<T>.value(
-      value: vmBuilder,
-      child: Consumer<T>(
+    return ChangeNotifierProvider<T>(
+      create: (context) => vmBuilder,
+      builder: (context, _) => Consumer<T>(
         builder: _buildScreenContent,
       ),
     );
@@ -29,16 +30,16 @@ class BaseView<T extends BaseViewModel> extends StatelessWidget {
               ),
             )
           : Stack(
-              children: [
-                if (builder != null) builder!(context, viewModel),
-                Visibility(
-                    visible: viewModel.isLoading,
-                    child: Container(
-                      color: Colors.white38,
-                      child: Center(
-                        child: CircularProgressIndicator(),
-                      ),
-                    ))
-              ],
-            );
+            children: [
+              if (builder != null) builder!(context, viewModel),
+              Visibility(
+                  visible: viewModel.isLoading,
+                  child: Container(
+                    color: Colors.white38,
+                    child: Center(
+                      child: CircularProgressIndicator(),
+                    ),
+                  ))
+            ],
+          );
 }

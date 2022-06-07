@@ -9,7 +9,7 @@ import 'package:swapy/screens/login/view_model/login_view_model.dart';
 class HomeService {
   final db = FirebaseFirestore.instance;
 
-  Future<List<Type>?> getToyTypes() async {
+  Future<List<TType>?> getToyTypes() async {
     final toyTypesCollection = db.collection(StringConstants.toyTypes);
     final result = await toyTypesCollection.doc(StringConstants.toyTypes).get();
     if (result.data() != null) {
@@ -18,7 +18,7 @@ class HomeService {
     return null;
   }
 
-  Future<List<Toy>?> getToys(Type selectedToyType) async {
+  Future<List<Toy>?> getToys(TType selectedToyType) async {
     final toysCollection = db.collection(StringConstants.toys);
     final toys = await toysCollection.doc(selectedToyType.typeId).get();
     if(toys.data() != null){

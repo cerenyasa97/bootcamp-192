@@ -35,9 +35,12 @@ dependencies:
   cupertino_icons: ^1.0.2
   path_provider: ^2.0.10
   auto_size_text: ^3.0.0
+  image_picker: ^0.8.5+3
+  firebase_storage: ^10.2.17
   firebase_messaging: ^11.4.1
   firebase_core: ^1.16.0
   firebase_auth: ^3.3.17
+  permission_handler: ^9.2.0
   google_fonts: ^2.0.0
   flutter_svg: ^1.0.3
   ionicons: ^0.1.2
